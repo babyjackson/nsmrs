@@ -1,0 +1,90 @@
+/* pages/component/mqzx/mqzx.wxss */
+@import '../../common/common.wxss';
+@import '../../../template/template.wxss';
+page{
+  background:#ffffff;
+}
+.fl{
+  float:left;
+}
+.fr{
+  float:right;
+}
+.clearfix:after {/***加在元素父级清除浮动*****/
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.h140{
+  height: 140rpx;
+}
+.ppdpw{
+  width: 750rpx;
+  height: 295rpx;
+  border-bottom: 1rpx solid #e5e5e5;
+  position: relative;
+}
+.dptitw{
+  width: 750rpx;
+  height: 105rpx;
+  padding: 32rpx 15rpx;
+  overflow: hidden;
+  position: relative;
+}
+.dptitw .dplogo{
+  width: 40rpx;
+  height: 40rpx;
+  border:1rpx solid #dcdcdc;
+  border-radius: 2rpx;
+  overflow: hidden;
+  margin-top: 5rpx;
+}
+.dptitw .dplogo image{
+  width: 40rpx;
+  height: 40rpx;
+  display: block;
+}
+.dptitw .tit{
+  font-size: 30rpx;
+  color: #23242a;
+  font-weight: bold;
+  margin-left: 13rpx;
+}
+.dptitw .num{
+  font-size: 20rpx;
+  color: #959295;
+  margin-left: 15rpx;
+}
+.dptitw .jrdp{
+  width: 135rpx;
+  height: 50rpx;
+  background: #23242a;
+  font-size:24rpx;
+  color: #ffffff;
+  text-align: center;
+  border: 0;
+  outline: 0;
+  border-radius: 25rpx;
+  display: block;
+  line-height: 50rpx;
+  padding: 0;
+}
+.ppdpul{
+  height: 170rpx;
+  overflow: hidden;
+  width: 750rpx;
+}
+.ppdpul view-item{
+  width: 170rpx;
+  height: 170rpx;
+  margin-left: 15rpx;
+  overflow: hidden;
+}
+.ppdpul view-item image{
+  width: 170rpx;
+  height: 170rpx;
+  display: block;
+}

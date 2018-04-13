@@ -1,0 +1,46 @@
+<!--pages/component/sslh/sslh.wxml-->
+<!--sstop-->
+<view class="sstop">
+  <image src="/img/allimg.jpg"></image>
+  <view-tit>“颜王”向来步步为赢，会护肤的男人才有戏</view-tit>
+</view>
+<!--颜王2-->
+<view class="yanw">
+  <view-li class="clearfix" wx:for="{{yanw}}" wx:key="id">
+    <navigator class="fl img" url="{{item.url}}">
+      <image src="{{item.imgsrc}}"></image>
+    </navigator>
+    <view class="fr rtxt">
+      <view class="tit">{{item.tit}}</view>
+      <view class="h50"></view>
+      <view class="clearfix scw">
+        <view class="sc fl">{{item.sc}} 收藏</view>
+        <view class="yl fl">{{item.yl}} 游览</view>
+      </view>
+    </view>
+  </view-li>
+</view>
+<!--绅士乐活-->
+<view class="sslhw">
+  <view-li class="sslh" wx:for="{{sslh}}" wx:key="id">
+    <navigator class="img">
+      <image src="{{item.imgsrc}}"></image>
+    </navigator>
+    <view class="dl">
+      <view class="tit">{{item.tit}}</view>
+      <view class="txt">{{item.txt}}</view>
+      <view class="fb clearfix">
+        <view class="fl"><text>{{item.fbdata}}</text>发布</view>
+        <view class="fr"><text>{{item.yl}}</text>浏览</view>
+        <view class="fr sx"><image src="/img/sx.png"></image></view>
+        <view class="fr"><text>{{item.sc}}</text>收藏</view>
+      </view>
+    </view>
+    <view></view>
+  </view-li>
+  <view class="jzgd">加载更多</view>
+</view>
+<!--底部-->
+<view class="h140"></view>
+<import src="../../../template/template.wxml"/>
+<template is="tabBar" data="{{tabBar:bindData.tabBar}}"/>

@@ -1,0 +1,90 @@
+/* pages/component/fx/dpjj/dpjj.wxss */
+@import '../../../common/common.wxss';
+@import '../../../../template/template.wxss';
+page{
+  background: #fff;
+}
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.clearfix:after{
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.fxnav{
+  padding:  0 20rpx;
+  height: 90rpx;
+  background:#fff;
+}
+.fxnav .nav{
+  width: 710rpx;
+  height: 90rpx;
+  display: flex;
+}
+.fxnav .nav .li{
+  width: 25%;
+  text-align: center;
+  line-height: 87rpx;
+  color: #333333;
+  font-size: 24rpx;
+}
+.fxnav .nav .cur{
+  border-bottom: 3rpx solid #23242a;
+}
+.dpbanner{
+  width: 750rpx;
+  height: 290rpx;
+  background: #ffffff;
+}
+.dpbanner .ban{
+  width: 165rpx;
+  height: 205rpx;
+  margin: 0 auto;
+}
+.h60{
+  height: 60rpx;
+}
+.dpbanner .ban image{
+  width: 165rpx;
+  height: 205rpx;
+  display: block;
+}
+.h15{
+  height: 15rpx;
+  background: #efefef;
+
+}
+.dpjj{
+  height: 350rpx;
+  width: 750rpx;
+}
+.dpjj view-item{
+  display: block;
+  width: 750rpx;
+  height: 90rpx;
+}
+.dpjj view-item .mc{
+  width: 170rpx;
+  height: 90rpx;
+  font-size: 28rpx;
+  color: #9a9a9a;
+  line-height: 90rpx;
+  text-align: center;
+}
+.dpjj view-item .xq{
+  width: 560rpx;
+  line-height: 90rpx;
+  height: 90rpx;
+  font-size: 28rpx;
+  color: #333333;
+  
+}
+.letter-spacing{
+  letter-spacing: 20rpx;
+}

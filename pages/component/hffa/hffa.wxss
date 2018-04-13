@@ -1,0 +1,128 @@
+/* pages/component/hffa/hffa.wxss */
+@import '../../common/common.wxss';
+@import '../../../template/template.wxss';
+page{
+  background: #f0efef;
+}
+.fl{
+  float:left;
+}
+.fr{
+  float:right;
+}
+.clearfix::after {/***加在元素父级清除浮动*****/
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.h140{
+  height: 140rpx;
+}
+.banner{
+  width: 750rpx;
+  height: 420rpx;
+}
+.banner .ban{
+  width: 750rpx;
+  height: 420rpx;
+  position:relative;
+}
+.banner .ban .tit{
+  width: 730rpx;
+  height: 50rpx;
+  overflow: hidden;
+  text-align: center;
+  line-height: 50rpx;
+  position: absolute;
+  left: 10rpx;
+  bottom: 45rpx;
+  font-size: 30rpx;
+  color: #ffffff;
+  font-weight: bold;
+}
+.banner .ban navigator{
+  width: 750rpx;
+  height: 420rpx;
+}
+.banner .ban navigator image{
+  width: 750rpx;
+  height: 420rpx;
+}
+.banner .wx-swiper-dots.wx-swiper-dots-horizontal{
+     margin-bottom: -20rpx;
+}
+.hffa{
+  margin:30rpx 15rpx 0 15rpx;
+}
+.hffa view-item{
+  display: block;
+  width: 720rpx;
+  height: 680rpx;
+  background: #fff;
+  border-radius: 10rpx;
+  overflow: hidden;
+  margin-bottom: 15rpx;
+}
+.hffa view-item .tit{
+  height: 80rpx;
+  overflow: hidden;
+  line-height: 80rpx;
+  padding: 0 20rpx;
+  font-size: 26rpx;
+  color: #23242a;
+  font-weight: bold;
+}
+.hffa view-item .img{
+  padding: 0 20rpx;
+}
+.hffa view-item .img image{
+  width: 685rpx;
+  height: 400rpx;
+  border-radius: 15rpx;
+  display: block;
+  overflow: hidden;
+}
+.hffa view-item .txt{
+  height: 95rpx;
+  border-bottom: 1rpx solid #e5e5e5;
+  line-height: 47rpx;
+  overflow: hidden;
+  font-size: 24rpx;
+  padding: 0 20rpx;
+  color: #363636;
+}
+.hffa view-item .gzw{
+  height: 40rpx;
+  font-size: 22rpx;
+  color: #999999;
+  margin: 30rpx 0;
+  padding: 0 20rpx;
+}
+.hffa view-item .gzw image{
+  width: 35rpx;
+  height: 40rpx;
+  display: block;
+  margin-left: 15rpx;
+  margin-top:7rpx;
+}
+.hffa view-item .gzw view{
+  margin-right: 50rpx;
+}
+.hffa view-item .gzw .sq{
+  width: 95rpx;
+  height: 40rpx;
+  text-align: center;
+  line-height: 40rpx;
+  font-size: 22rpx;
+  color: #ffffff;
+  background: #0e0e10;
+}
+.jzgd{
+  height: 115rpx;
+  line-height: 115rpx;
+  text-align: center;
+  font-size: 26rpx;
+  color: #9c9c9c;
+}

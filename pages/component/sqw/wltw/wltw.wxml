@@ -1,0 +1,21 @@
+<!--pages/component/sqw/wltw/wltw.wxml-->
+<view class="wltw">
+  <form>
+    <view class="tw">
+      <textarea placeholder="请添加你要提问的问题..." name="textarea"/>
+    </view>
+    <view class="h25"></view>
+    <!--选择图片-->
+    <view class="choosePic" bindtap="chooseImage">
+      <view class="img fl">
+        <image src="/img/tpjia.jpg"></image>
+      </view>
+      <view class="wimg fl clearfix">
+        <view-item wx:for="{{choosesrc}}" wx:for-item="image" wx:for-index='idx' wx:key="id"><image src="{{image}}" data-id="{{idx}}" data-src="{{image}}" bindtap="previewImage"></image></view-item>
+      </view>
+    </view>
+    <view class="tj">
+      <button form-type="submit">提交问题</button>
+    </view>
+  </form>
+</view>

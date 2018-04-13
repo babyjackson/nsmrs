@@ -1,0 +1,172 @@
+/* pages/component/yy/ddyy/ddyy.wxss */
+@import '../../../common/common.wxss';
+page{
+  background: #efefef;
+}
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.clearfix:after{
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.yygoods{
+  height: 230rpx;
+  margin-top: 15rpx;
+  background: #fff;
+}
+.h35{
+  height: 35rpx;
+}
+.yygoods .figure{
+  width: 165rpx;
+  height: 155rpx;
+  margin-left: 20rpx;
+}
+.yygoods .figure image{
+  display: block;
+  width: 165rpx;
+  height: 155rpx;
+}
+.yygoods .dl{
+  width: 380rpx;
+  height: 155rpx;
+  margin-left: 40rpx;
+}
+.yygoods .dl .tit{
+  font-size: 30rpx;
+  color: #1c1c1c;
+  line-height:40rpx;
+}
+.yygoods .dl .txt{
+  font-size: 23rpx;
+  color: #808080;
+  margin-top: 20rpx;
+  line-height: 30rpx;
+  height: 60rpx;
+  overflow: hidden;
+}
+.yygoods .ol{
+  width: 130rpx;
+  margin-right: 15rpx;
+  text-align: right;
+}
+.yygoods .ol .price{
+  height: 50rpx;
+  line-height: 50rpx;
+  font-size: 35rpx;
+  color: #ffca12;
+}
+.yygoods .ol .num{
+  font-size: 29rpx;
+  color: #808080;
+}
+.yyxxw{
+  height: 730rpx;
+  background: #fff;
+  margin-top: 25rpx;
+}
+.yyxxw .section{
+  height: 100rpx;
+  padding: 22rpx 0;
+  border-bottom: 1rpx solid #f2f2f2;
+}
+.yyxxw .section .attri{
+  width: 165rpx;
+  text-align: center;
+  height: 45rpx;
+  line-height: 45rpx;
+  font-size: 28rpx;
+  color: #b1b1b1;
+  border-right: 3rpx solid #e2e2e2;
+  margin-top: 3rpx;
+}
+.yyxxw .section .input{
+  width: 550rpx;
+  overflow: hidden;
+}
+.yyxxw .section .input input{
+  border: 0;
+  font-size: 28rpx;
+  outline: 0;
+  line-height: 45rpx;
+  width: 550rpx;
+  height: 45rpx;
+  color: #181818;
+}
+.yyxxw .section .input label{
+  margin-right: 70rpx;
+  font-size: 28rpx;
+  color: #181818;
+}
+radio .wx-radio-input{
+   border-radius: 50%;
+   width: 40rpx;
+   height: 40rpx;
+}
+radio .wx-radio-input.wx-radio-input-checked{
+   border: none;
+   background: red;
+}
+radio .wx-radio-input.wx-radio-input-checked::before{
+   border-radius: 50%;
+   width: 40rpx;
+   height: 40rpx;
+   line-height: 40rpx;
+   text-align: center;
+   font-size:30rpx;
+   color:#fff;
+   background: transparent;
+   transform:translate(-50%, -50%) scale(1);
+   -webkit-transform:translate(-50%, -50%) scale(1);
+}
+.yyxxw .textarea{
+  padding: 15rpx;
+}
+.yyxxw .textarea textarea{
+  width: 720rpx;
+  height: 170rpx;
+  border-radius: 8rpx;
+  background: #f8f4f3;
+  padding: 20rpx;
+  font-size: 28rpx;
+  color: #b1b1b1;
+}
+.h30{
+  height: 30rpx;
+}
+.ypay{
+  padding: 0 20rpx;
+  background: #ffffff;
+  color: #b1b1b1;
+  font-size: 28rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+}
+.ypay text{
+  margin-left: 30rpx;
+  color: #ec7933;
+  line-height: 90rpx;
+}
+.h170{
+  height: 170rpx;
+}
+.ljyy{
+  width: 715rpx;
+  margin: 0 auto;
+  display: block;
+  height: 88rpx;
+  box-shadow: 1rpx 1rpx 4rpx rgba(4, 0, 0, 0.26);
+  padding: 0;
+  line-height: 88rpx;
+  background: #23242a;
+  font-size: 32rpx;
+  color: #ffffff;
+  margin-bottom: 30rpx;
+}

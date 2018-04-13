@@ -1,0 +1,172 @@
+/* pages/component/sslh/sslh.wxss */
+
+@import '../../common/common.wxss';
+@import '../../../template/template.wxss';
+page{
+  background: #0e0e10;
+}
+.fl{
+  float:left;
+}
+.fr{
+  float:right;
+}
+.clearfix::after {/***加在元素父级清除浮动*****/
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.h140{
+  height: 140rpx;
+}
+.sstop{
+  position: relative;
+  width: 720rpx;
+  height: 405rpx;
+  margin: 20rpx 15rpx 0 15rpx;
+}
+.sstop image{
+  width: 720rpx;
+  height: 405rpx;
+  border-radius: 10rpx;
+  display: block;
+}
+.sstop view-tit{
+ display: block;
+ position: absolute;
+ width: 720rpx;
+ left: 0;
+ bottom: 0;
+ text-align: center;
+ height: 70rpx;
+ font-size: 30rpx;
+ color: #ffffff;
+ font-weight: bold;
+}
+/**颜王**/
+.yanw{
+  width: 720rpx;
+  margin: 0 15rpx;
+}
+.yanw view-li{
+  display: block;
+  width: 720rpx;
+  height: 215rpx;
+  margin-top: 35rpx;
+}
+.yanw view-li .img{
+  width: 310rpx;
+  height: 215rpx;
+}
+.yanw view-li .img image{
+  width: 310rpx;
+  height: 215rpx;
+  display: block;
+}
+.yanw view-li .rtxt{
+  width: 385rpx;
+  height: 215rpx;
+}
+.yanw view-li .rtxt .tit{
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 30rpx;
+  line-height: 60rpx;
+  height: 115rpx;
+  overflow: hidden;
+}
+.h50{
+  height: 50rpx;
+}
+.yanw .scw{
+  height: 20rpx;
+}
+.yanw .scw view{
+  font-size: 22rpx;
+  color: #999999;
+  line-height: 20rpx;
+}
+.yanw .scw .sc{
+  padding-right: 7rpx;
+  border-right: 2rpx solid #646464;
+}
+.yanw .scw .yl{
+  padding-left: 7rpx;
+}
+/***绅士乐活***/
+.sslhw{
+  width: 720rpx;
+  margin: 0 15rpx;
+}
+.sslh{
+  height: 550rpx;
+  width: 720rpx;
+  border-radius: 5rpx;
+  overflow: hidden;
+  margin-top: 25rpx;
+  display: block;
+}
+.sslh .img{
+  border-radius: 5rpx;
+  width: 720rpx;
+  height: 340rpx;
+}
+.sslh .img image{
+  width: 720rpx;
+  height: 340rpx;
+  display: block;
+}
+.sslh .dl{
+  height: 210rpx;
+  background: #fff;
+  width: 720rpx;
+  padding: 0 40rpx;
+}
+.sslh .dl .tit{
+ height: 60rpx;
+ overflow: hidden;
+ font-size: 26rpx;
+ line-height: 30rpx;
+ color: #23242a;
+ font-weight: bold;
+ padding: 15rpx 0;
+}
+.sslh .dl .txt{
+  height: 80rpx;
+  border-bottom: 1rpx solid #eeeeee;
+  font-size: 20rpx;
+  color: #363636;
+  line-height: 30rpx;
+  padding-bottom: 20rpx;
+}
+.sslh .dl .fb{
+  font-size: 22rpx;
+  color: #999999;
+  line-height: 22rpx;
+  margin: 18rpx 0;
+}
+.sslh .dl .fb text{
+  margin-right: 10rpx;
+}
+.sslh .dl .fb view{
+  padding-right: 10rpx;
+}
+.sslh .dl .fb .sx{
+  width: 3rpx;
+  height: 20rpx;
+  margin-top: 1rpx;
+}
+.sslh .dl .fb .sx image{
+  width: 3rpx;
+  height: 20rpx;
+  display: block;
+}
+.jzgd{
+  height: 120rpx;
+  line-height: 120rpx;
+  text-align: center;
+  font-size: 26rpx;
+  color: #9c9c9c;
+}

@@ -1,0 +1,22 @@
+<!--pages/component/sq/sq.wxml-->
+<view class="sqbigtit">看看大家都在问什么...</view>
+<view class="squl">
+  <view-item wx:for="{{sq}}" wx:key="id">
+    <view class="tit">
+      <view-wen class="fl">问</view-wen>
+      <navigator url="{{item.url}}" class="t">{{item.tit}}</navigator>
+    </view>
+    <view class="textw clearfix">
+      <view class="figure fl">
+        <image src="{{item.imgsrc}}"></image>
+      </view>
+      <view class="text fr">{{item.text}}</view>
+    </view>
+  </view-item>
+</view>
+<button class="wytw" bindtap="navTo">
+  <view class="tw clearfix">
+    <view class="fl img"><image src="/img/jia.png"></image></view>
+    <view class="tx fl">我要提问</view>
+  </view>
+</button>

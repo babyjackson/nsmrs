@@ -1,0 +1,92 @@
+{
+  "pages":[
+    "pages/component/index",
+    "pages/component/me/me",
+    "pages/component/wddd/wddd",
+    "pages/component/gywm/gywm",
+    "pages/component/tjpj/tjpj",
+    "pages/component/gwc/gwc",
+    "pages/component/wdsc/wdsc",
+    "pages/component/bdsj/bdsj",
+    "pages/component/xzdz/xzdz",
+    "pages/component/dzgl/dzgl",
+    "pages/component/wxzf/wxzf",
+    "pages/component/zfcg/zfcg",
+    "pages/component/ddjs/ddjs",
+    "pages/component/news/news",
+    "pages/logs/logs",
+    "pages/component/sc/sc",
+    "pages/component/scxq/scxq",
+    "pages/component/dpxq/dpxq",
+    "pages/component/ppdp/ppdp",
+    "pages/component/product/product",
+    "pages/component/brand/brand",
+    "pages/component/hffa/hffa",
+    "pages/component/sslh/sslh",
+    "pages/component/sqw/sq/sq",
+    "pages/component/sqw/sqs/sqs",
+    "pages/component/sqw/wdxq/wdxq",
+    "pages/component/sqw/wltw/wltw",
+    "pages/component/yhqw/yhq/yhq",
+    "pages/component/hykw/hykxq/hykxq",
+    "pages/component/hykw/hyksm/hyksm",
+    "pages/component/jf/wdjf/wdjf",
+    "pages/component/jf/jfmx/jfmx",
+    "pages/component/jf/jfsc/jfsc",
+    "pages/component/jf/jfscxq/jfscxq",
+    "pages/component/yy/wdyy/wdyy",
+    "pages/component/yy/yyxq/yyxq",
+    "pages/component/yy/ddyy/ddyy",
+    "pages/component/ptzx/ptdd/ptdd",
+    "pages/component/fx/fxzx/fxzx",
+    "pages/component/fx/dpjj/dpjj",
+    "pages/component/gq/gy/gy",
+    "pages/component/gq/qg/qg",
+    "pages/component/gq/fbgy/fbgy",
+    "pages/component/gq/qgbj/qgbj",
+    "pages/component/shopsinfo/shopsinfo",
+    "pages/component/cleargoods/cleargoods",
+    "pages/component/lineitem/lineitem",
+    "pages/component/setaddr/setaddr",
+    "pages/component/category/category"
+  ],
+  "window":{
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "男士美容护肤",
+    "backgroundColor": "#090909",
+    "backgroundTextStyle": "light"
+  },
+  "tabBar": {
+    "selectedColor": "#ffff0c",
+    "backgroundColor":"#0e0e10",
+    "color": "#dedede",
+    "list": [
+      {
+        "pagePath": "pages/component/index",
+        "text": "首页",
+        "iconPath": "img/1_03.png",
+        "selectedIconPath": "img/0_03.png"
+      },
+      {
+        "pagePath": "pages/component/sqw/sq/sq",
+        "text": "社区",
+        "iconPath": "img/1_09.png",
+        "selectedIconPath": "img/0_09.png"
+      },
+      {
+        "pagePath": "pages/component/brand/brand",
+        "text": "品牌",
+        "iconPath": "img/1_06.png",
+        "selectedIconPath": "img/0_06.png"
+      },
+      {
+        "pagePath": "pages/component/me/me",
+        "text": "我的",
+        "iconPath": "img/1_12.png",
+        "selectedIconPath": "img/0_12.png"
+      }
+    ]
+  },
+  "debug": true
+}

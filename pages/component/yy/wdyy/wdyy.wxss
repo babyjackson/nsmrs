@@ -1,0 +1,172 @@
+/* pages/component/yy/wdyy/wdyy.wxss */
+@import '../../../common/common.wxss';
+page{
+  background: #efefef;
+}
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.clearfix:after{
+content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.myyycon .cont-item{
+  display: none;
+}
+.myyycon  .on{
+  display: block;
+}
+.myyyTab{
+  height: 90rpx;
+  border-bottom: 2rpx solid #f2f2f2;
+  background: #fff;
+}
+.myyyTab view{
+  width: 33.3%;
+  text-align: center;
+  overflow: hidden;
+  height: 90rpx;
+  float: left;
+  color: #333333;
+  line-height: 90rpx;
+  position: relative;
+  font-size: 24rpx;
+}
+.myyyTab .active .xian{
+  background: #333;
+}
+.myyyTab view .xian{
+  position: absolute;
+  width: 150rpx;
+  height: 4rpx;
+  bottom: 0;
+  left:50%;
+  margin-left: -75rpx;
+  background: #fff;
+}
+.cont-item view-item{
+  display: block;
+  padding: 0 25rpx;
+  margin-top: 10rpx;
+  height: 240rpx;
+  border-bottom: #e5e5e5;
+  background: #fff;
+}
+.cont-item view-item .contitw{
+  width: 700rpx;
+  height: 70rpx;
+  padding: 10rpx 0;
+  border-bottom: 1rpx solid #e7e7e7;
+  font-size: 25rpx;
+  line-height: 50rpx;
+}
+.cont-item view-item .contitw .ico{
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.cont-item view-item .contitw .ico image{
+  width: 50rpx;
+  height: 50rpx;
+  display: block;
+}
+.cont-item view-item .contitw .date{
+  margin-left: 10rpx;
+  color: #878787;
+}
+.cont-item view-item .contitw .time{
+  margin-left: 40rpx;
+  color: #878787;
+}
+.cont-item view-item .contitw .tips{
+  border:0;
+  width: 150rpx;
+  text-align: center;
+  margin-right: 20rpx;
+}
+.green1{
+  border:1rpx solid #47c9af;
+  color: #47c9af;
+}
+.green2{
+  background: #47c971;
+}
+.cont-item view-item .dlw{
+  height: 165rpx;
+}
+.cont-item view-item .dlw .dl{
+  width: 400rpx;
+  padding: 30rpx 0;
+  margin-left: 60rpx;
+  
+}
+.cont-item view-item .dlw .dl .dd{
+  height: 50rpx;
+  padding: 10rpx 0;
+  overflow: hidden;
+}
+.cont-item view-item .dlw .dl .dd .xm{
+  font-size: 21rpx;
+  text-align: center;
+  line-height: 30rpx;
+  width: 90rpx;
+  height: 30rpx;
+  border-radius: 10rpx;
+  letter-spacing: 10rpx;
+}
+.green3{
+  color: #47c9af;
+  border:1rpx solid #47c9af;
+}
+.blue3{
+  color: #35bbd8;
+  border:1rpx solid #35bbd8;
+}
+.h15{
+  height: 15rpx;
+}
+.cont-item view-item .dlw .dl .dd text{
+  color: #242424;
+  font-size: 25rpx;
+  line-height: 30rpx;
+  margin-left: 30rpx;
+}
+.cont-item view-item .dlw .xg{
+  padding: 50rpx 20rpx;
+}
+.cont-item view-item .dlw .xg .xgyy{
+  width: 150rpx;
+  height: 60rpx;
+  display: block;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  line-height: 60rpx;
+  border-radius: 15rpx;
+  background: #fff;
+  font-size: 25rpx;
+}
+button::after{
+  border:0;
+  outline: 0;
+}
+.red1{
+  background: #f97b7b;
+}
+.red2{
+  border:1rpx solid #f97b7b;
+  color: #f97b7b;
+}
+.grey1{
+  background: #b8b8b8;
+}
+.grey2{
+  color: #b8b8b8;
+}

@@ -1,0 +1,329 @@
+/* pages/component/jxsc/jxsc.wxss */
+@import '../../common/common.wxss';
+@import '../../../template/template.wxss';
+page{
+  background: #f0efef;
+}
+.fl{
+  float:left;
+}
+.fr{
+  float:right;
+}
+.clearfix:after {/***加在元素父级清除浮动*****/
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.sctoptab{
+  width: 750rpx;
+  height: 145rpx;
+  background: #23242a;
+}
+.sctoptab .navw{
+  display: inline-block;
+  margin-right: 55rpx;
+  margin-left: 15rpx;
+  padding-top: 10rpx;
+  height: 140rpx;
+  text-align: center;
+}
+.sctoptab .navw image{
+  width: 70rpx;
+  height: 70rpx;
+  display: block;
+  margin: 0 auto;
+}
+.sctoptab .navw text{
+  line-height: 45rpx;
+  font-size: 30rpx;
+  color: #fff;
+}
+.sctoptab .navw.current{
+  border-bottom: 5rpx solid #76fcef;
+}
+.h120{
+  height: 120rpx;
+}
+.scbanner{
+  width: 750rpx;
+  height: 275rpx;
+  background: #23242a;
+  position: relative;
+}
+.h120{
+  height: 120rpx;
+}
+.scbanner .imgban{
+  position: absolute;
+  top: 0;
+  width: 720rpx;
+  height: 350rpx;
+  left: 15rpx;
+  box-shadow: 4rpx 4rpx 4rpx rgba(13,9, 9, 0.3);
+}
+.scbanner .imgban image{
+  width: 720rpx;
+  height: 350rpx;
+}
+.hotRecomw{
+  margin: 0 15rpx;
+  background: #ffffff;
+}
+.alltit{
+  height: 70rpx;
+  padding: 0 15rpx;
+  position: relative;
+}
+.alltit .yw{
+  font-size: 48rpx;
+  color: #efefef;
+  font-style: italic;
+  line-height: 70rpx;
+  font-weight: bold;
+}
+.alltit .zw{
+  font-size: 30rpx;
+  color: #1d1d1d;
+  position: absolute;
+  line-height: 70rpx;
+  left: 30rpx;
+  top: 0;
+  font-weight: bold;
+  font-style: italic;
+}
+.hotRecom{
+  width: 720rpx;
+  height: 290rpx;
+  overflow: hidden;
+  border-top: 0.02rpx solid #f7f3f7;
+}
+.hotRecom .limg{
+  width: 250rpx;
+  height: 250rpx;
+  margin: 22rpx;
+}
+.hotRecom .limg image{
+  width: 250rpx;
+  height: 250rpx;
+}
+.hotRecom .rdl{
+  width: 390rpx;
+  height: 250rpx;
+  margin-right: 15rpx;
+  overflow: hidden;
+  padding-top: 23rpx;
+}
+.hotRecom .rdl .tit{
+  font-size: 30rpx;
+  color: #232c2d;
+  width: 390rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  overflow: hidden;
+}
+.hotRecom .rdl .tips{
+  font-size: 24rpx;
+  color: #262626;
+  height: 25rpx;
+  width: 390rpx;
+  overflow: hidden;
+  margin-top: 5rpx;
+  line-height: 25rpx;
+}
+.h45{
+  height: 45rpx;
+}
+.hotRecom .rdl .jdt{
+  width: 250rpx;
+  height: 30rpx;
+  position: relative;
+}
+.hotRecom .rdl .djdt{
+  width: 250rpx;
+  height: 28rpx;
+  background: #ffebef;
+  border:1rpx solid #ffd6c3;
+  border-radius: 14rpx;
+  overflow: hidden;
+  
+}
+.hotRecom .rdl .sjdt{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 83%;
+  height: 28rpx;
+  background: #ff8229;
+  border:1rpx solid #ff8229;
+  border-radius: 14rpx;
+  overflow: hidden;  
+  font-size: 20rpx;
+  text-align: center;
+  line-height: 28rpx;
+  color: #fff;
+  font-style: italic;
+}
+.hotRecom .rdl .djdt text{
+  font-size: 22rpx;
+  color: #ff362b;
+  position: absolute;
+  right: 10rpx;
+  top: 0;
+  line-height: 28rpx;
+  z-index: 2;
+}
+.h30{
+  height: 30rpx;
+}
+.hotRecom .rdl .pw{
+  width: 390rpx;
+  height: 45rpx;
+  line-height: 45rpx;
+}
+.hotRecom .rdl .pw .price{
+  width: 190rpx;
+  height: 45rpx;
+  line-height: 45rpx;
+  overflow: hidden;
+}
+.hotRecom .pw .price .xj{
+  font-size: 30rpx;
+  color: #000000;
+  font-weight: bold;
+}
+.hotRecom .pw .price .yj{
+  font-size: 20rpx;
+  color: #959395;
+  text-decoration:line-through;
+}
+.hotRecom .pw .msq{
+  width: 115rpx;
+  height: 45rpx;
+  background: #000000;
+  line-height: 45rpx;
+  text-align: center;
+  font-size: 30rpx;
+  color: #f0efef;
+}
+.h15{
+  height: 15rpx;
+}
+.zstjw{
+  width: 750rpx;
+  height: 405rpx;
+  background: #fff;
+}
+.zstj{
+  width: 750rpx;
+  height: 300rpx;
+}
+.zstj view-item{
+  display: block;
+  width: 200rpx;
+  height: 320rpx;
+  margin: 15rpx 25rpx 0 25rpx;
+  overflow: hidden;
+}
+.zstj view-item image{
+  width: 200rpx;
+  height: 200rpx;
+  display: block;
+}
+.zstj view-item .tit{
+  font-size: 24rpx;
+  color: #000000;
+  text-align: center;
+  width: 200rpx;
+  height: 30rpx;
+  line-height: 30rpx;
+  overflow: hidden;
+}
+.h20{
+  height: 20rpx;
+}
+.zstj view-item .price{
+  height: 30rpx;
+  line-height: 30rpx;
+  width: 200rpx;
+  overflow: hidden;
+  text-align: center;
+}
+.zstj view-item .price .xj{
+  font-size: 30rpx;
+  color: #000000;
+  font-weight: bold;
+}
+.zstj view-item .price .yj{
+  font-size: 20rpx;
+  color: #929092;
+  text-decoration: line-through;
+}
+.h140{
+  height: 140rpx;
+}
+.wntj{
+  margin: 0 20rpx;
+}
+.wntj view-item{
+  display: block;
+  width: 330rpx;
+  height: 465rpx;
+  background: #fff;
+  padding: 10rpx;
+  margin-bottom: 20rpx;
+}
+.wntj view-item .img{
+  width: 330rpx;
+  height: 330rpx;
+}
+.wntj view-item .img image{
+  width: 330rpx;
+  height: 330rpx;
+  display: block;
+}
+.wntj view-item .tit{
+  font-size: 22rpx;
+  color: #545454;
+  line-height: 40rpx;
+  height: 80rpx;
+  overflow: hidden;
+  margin-top: 5rpx;
+}
+.wntj view-item .pj{
+  width: 330rpx;
+  height: 36rpx;
+  border:2rpx solid #23242a;
+  display: flex;
+  font-size: 24rpx;
+  margin-top: 5rpx;
+}
+.wntj view-item .pj view{
+  width: 50%;
+  height: 36rpx;
+  text-align: center;
+  line-height: 36rpx;
+  font-size: 24rpx;
+  color:#23242a; 
+}
+.wntj view-item .pj button{
+  width: 50%;
+  outline: 0;
+  border: 0;
+  display: block;
+  height: 32rpx;
+  line-height: 32rpx;
+  text-align: center;
+  color: #fff;
+  border-radius: 0;
+  background: #23242a;
+  font-size: 24rpx;
+  }
+ .wntj view-item:nth-of-type(odd){
+   float: left;
+ } 
+ .wntj view-item:nth-of-type(even){
+   float: right;
+ } 

@@ -1,0 +1,79 @@
+<!--pages/component/yy/wdyy/wdyy.wxml-->
+<view class="myyyTab clearfix" bindtap="tabFun">
+  <view class="{{tabArr.curHdIndex=='0'? 'active' : ''}}" id="tab-hd01" data-id="0">全部<view class="xian"></view></view>   
+  <view class="{{tabArr.curHdIndex=='1'? 'active' : ''}}" id="tab-hd02" data-id="1">进行中<view class="xian"></view></view>
+  <view class="{{tabArr.curHdIndex=='2'? 'active' : ''}}" id="tab-hd03" data-id="2">待评价<view class="xian"></view></view>   
+</view>
+<view class="myyycon">
+  <view class="cont-item {{tabArr.curBdIndex=='0'? 'on' : ''}}">
+    <!--进行中-->
+    <view class="jxz">
+      <view-item wx:for="{{jxz}}" wx:key="id">
+        <view class="contitw clearfix">
+          <view class="fl ico green2"><image src="/img/dateico.png"></image></view>
+          <view class="fl date">{{item.date}}</view>
+          <view class="fl time">{{item.time}}</view>
+          <view class="fr tips green1">进行中</view>
+        </view>
+        <view class="dlw clearfix">
+          <view class="dl fl">
+            <view class="dd clearfix"><view class="xm fl green3">项目</view><text class="fl">{{item.xm}}</text></view>
+            <view class="h15"></view>
+            <view class="dd clearfix"><view class="xm fl blue3">地点</view><text class="fl">{{item.dd}}</text></view>
+          </view>
+          <view class="fr xg">
+            <button class="xgyy green1" bindtap="reserOne">修改预约</button>
+          </view>
+        </view>
+      </view-item>
+    </view>
+    <!--评价-->
+    <view class="pj">
+      <view-item wx:for="{{jxz}}" wx:key="id">
+        <view class="contitw clearfix">
+          <view class="fl ico red1"><image src="/img/dateico.png"></image></view>
+          <view class="fl date">{{item.date}}</view>
+          <view class="fl time">{{item.time}}</view>
+          <view class="fr tips red2">进行中</view>
+        </view>
+        <view class="dlw clearfix">
+          <view class="dl fl">
+            <view class="dd clearfix"><view class="xm fl green3">项目</view><text class="fl">{{item.xm}}</text></view>
+            <view class="h15"></view>
+            <view class="dd clearfix"><view class="xm fl blue3">地点</view><text class="fl">{{item.dd}}</text></view>
+          </view>
+          <view class="fr xg">
+            <button class="xgyy red2">去评价</button>
+          </view>
+        </view>
+      </view-item>
+    </view> 
+    <!--已经完成-->
+    <view class="yjwc">
+      <view-item wx:for="{{jxz}}" wx:key="id">
+        <view class="contitw clearfix">
+          <view class="fl ico grey1"><image src="/img/dateico.png"></image></view>
+          <view class="fl date">{{item.date}}</view>
+          <view class="fl time">{{item.time}}</view>
+          <view class="fr tips grey2">进行中</view>
+        </view>
+        <view class="dlw clearfix">
+          <view class="dl fl">
+            <view class="dd clearfix"><view class="xm fl green3">项目</view><text class="fl">{{item.xm}}</text></view>
+            <view class="h15"></view>
+            <view class="dd clearfix"><view class="xm fl blue3">地点</view><text class="fl">{{item.dd}}</text></view>
+          </view>
+          <view class="fr xg">
+            <button class="xgyy grey2">已完成</button>
+          </view>
+        </view>
+      </view-item>
+    </view> 
+  </view>
+  <view class="cont-item {{tabArr.curBdIndex=='1'? 'on' : ''}}">
+    2
+  </view>
+  <view class="cont-item {{tabArr.curBdIndex=='2'? 'on' : ''}}">
+    3
+  </view>
+</view>

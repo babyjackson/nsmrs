@@ -1,0 +1,45 @@
+<!--pages/component/product/product.wxml-->
+<!--下拉-->
+<view wx:if="{{listData}}" class="a-dropdown-wrapper {{active ? 'expand' : ''}}">
+  <view id="a-dropdown-nav" class="a-dropdown-nav">
+    <block  wx:for="{{listData}}">
+      <view class="a-dropdown-nav-item {{ active && selectedNav == index ? 'active' : ''}}" bindtap="_onNavItemTap" data-index="{{index}}">
+          <text>{{item.nav}}</text>
+          <view class="triangle"></view>
+      </view>
+    </block>
+  </view>
+  <scroll-view class="a-dropdown-contents">
+    <block wx:for="{{listData}}" wx:for-item="list" wx:for-index="parentIndex">
+      <view hidden="{{selectedNav !== parentIndex}}">
+        <view class="a-dropdown-list-items {{active? 'show' : ''}}">
+          <block wx:for="{{list.data}}" wx:for-item="data">
+              <view class="a-dropdown-list-item"
+                  bindtap="_catchListItemTap" data-index="{{index}}" data-parentIndex="{{parentIndex}}" data-title="{{data.title}}">
+                  <view class="a-dropdown-list-item-line">
+                      <text class="a-dropdown-list-item-content">{{data.title}}</text>
+                  </view>
+              </view>
+          </block>
+        </view>
+      </view>
+    </block>
+  </scroll-view>
+  <view class="a-dropdown-placeholder"></view>
+  <view class="a-dropdown-bg" bindtap="_catchBgTap"></view>
+</view>
+<!--列表-->
+<view class="listgoodsW">
+  <view class="wntj">
+    <view-item wx:for="{{wntj}}" wx:for-index="key" wx:key="id">
+      <navigator class="img">
+        <image src="{{item.imgsrc}}"></image>
+      </navigator>
+      <view class="tit">{{item.tit}}</view>
+      <view class="pj">
+        <view class="price">{{item.price}}</view>
+        <button class="jrgwc">加入购物车</button>
+      </view>
+    </view-item>
+  </view>
+</view>

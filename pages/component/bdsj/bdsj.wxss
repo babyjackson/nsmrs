@@ -1,0 +1,58 @@
+/* pages/component/bdsj/bdsj.wxss */
+@import '../../common/common.wxss';
+.fl{
+  float:left;
+}
+.fr{
+  float:right;
+}
+.clearfix:after{
+ content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.section{
+  padding: 25rpx 15rpx;
+  border-bottom: 2px solid #e9e9e9;
+  position: relative;
+}
+.section .text{
+  display: block;
+  width: 140rpx;
+  font-size: 30rpx;
+  color: #050505;
+  line-height: 60rpx;
+  font-weight: bold;
+ }
+.section input{
+  width: 400rpx;
+  height: 30rpx;
+  font-size: 30rpx;
+  color: #c0c1c0;
+}
+.section .sendmsg{
+  position: absolute;
+  right:20rpx;
+  padding: 0rpx 20rpx;
+  line-height: 80rpx;
+  height: 80rpx;
+  background-color:#ffffff;
+  color: #bbbbbb;
+  text-align: center;
+  font-size: 30rpx;
+  top:15rpx;
+}
+.tjbd{
+  margin-top: 50rpx;
+  width: 700rpx;
+  height: 90rpx;
+  text-align: center;
+  border:0;
+  background: #23242a;
+  color: #fff;
+  font-size: 30rpx;
+  font-weight: bold;
+  line-height: 90rpx;
+}

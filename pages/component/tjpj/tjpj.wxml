@@ -1,0 +1,92 @@
+<view class="h15"></view>
+<view class="goodszs clearfix">
+  <view class="img fl">
+    <image src="{{imgUrl}}"></image>
+  </view>
+  <view class="zjtit fl">
+    <view class="zjt clearfix">
+      <view class="fl xd">{{tips}}</view>
+      <view class="fl tit">{{tit}}</view>
+    </view>
+    <view class="gg">{{color}};{{size}}</view>
+  </view>
+  <view class="price fr">
+   <view>{{price}}</view>
+   <view>{{num}}</view>
+  </view>
+</view>
+<view class="h2"></view>
+
+<view class="msxf clearfix">
+  <text class="fl">描述相符</text>
+  <view class="xiny fl">
+    <view><image src="/img/xin.jpg"></image></view>
+    <view><image src="/img/xin.jpg"></image></view>
+    <view><image src="/img/xin.jpg"></image></view>
+    <view><image src="/img/xin.jpg"></image></view>
+    <view><image src="/img/xin.jpg"></image></view>
+  </view>
+</view>
+<view class="spzl clearfix">
+  <text class="fl">商品质量</text>
+  <view class="xiny fl">
+    <view><image src="/img/xin.jpg"></image></view>
+    <view><image src="/img/xin.jpg"></image></view>
+    <view><image src="/img/xin.jpg"></image></view>
+    <view><image src="/img/xin.jpg"></image></view>
+    <view><image src="/img/xin.jpg"></image></view>
+  </view>
+</view>
+<!--评价-->
+<view class="section">
+  <form bindsubmit="bindFormSubmit">
+    <textarea placeholder="请留下你宝贵的评价" name="textarea"/>
+  </form>
+</view>
+<!--图片-->
+<view class="choosePic" bindtap="chooseImage">
+  <view class="clearfix">
+    <view-item wx:for="{{choosesrc}}" wx:for-item="image" wx:for-index='idx'><image src="{{image}}" data-id="{{idx}}" data-src="{{image}}" bindtap="previewImage"></image></view-item>
+  </view>
+  <view class="img">
+    <image src="/img/picturehq.jpg"></image>
+    <view>添加图片</view>
+  </view>
+</view>
+<view class="h15"></view>
+<!--店铺-->
+<view class="dianpu clearfix">
+  <view class="img fl"><image src="{{dpimg}}"></image></view>
+  <view class="text fl">
+    <view class='tit'>{{dptit}}</view>
+    <view class="mjname">{{mjname}}</view>
+  </view>
+</view>
+
+<view class="h2"></view>
+<view class="fwmy clearfix">
+  <text class="fl">服务满意</text>
+  <view class="xiny fl">
+    <view><image src="/img/xin.jpg"></image></view>
+    <view><image src="/img/xin.jpg"></image></view>
+    <view><image src="/img/xin.jpg"></image></view>
+    <view><image src="/img/xin.jpg"></image></view>
+    <view><image src="/img/xin.jpg"></image></view>
+  </view>
+</view>
+<view class="h15"></view>
+
+<!--底部-->
+<view class="dbfbpl clearfix">
+  <view class="nmpj fl">
+    <checkbox-group>
+        <label style="display: flex;" bindtap="selectList">
+          <icon class="fl" wx:if="{{select}}" type="success" color="#ffba4a"></icon>
+          <icon class="fl" wx:else type="circle"></icon>
+          <checkbox value="" color="#ffba4a" style="opacity:0;position:absolute;left:30rpx;" checked="checked"/> 匿名评价
+        </label>
+    </checkbox-group>
+  </view>
+  <button class="fbpl fr">发表评论</button>
+</view>
+<view class="h100"></view>

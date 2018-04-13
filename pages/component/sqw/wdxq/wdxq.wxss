@@ -1,0 +1,190 @@
+/* pages/component/sqw/wdxq/wdxq.wxss */
+@import '../../../common/common.wxss';
+@import '../../../../template/template.wxss';
+page{
+  background: #f0efef;
+}
+.fl{
+  float:left;
+}
+.fr{
+  float:right;
+}
+.clearfix::after {/***加在元素父级清除浮动*****/
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.h140{
+  height: 140rpx;
+}
+.problemw{
+  height: 595rpx;
+  padding: 0 30rpx;
+  background: #ffffff;
+}
+.problemw .twpeople{
+  height: 110rpx;
+  padding-top:25rpx;
+}
+.problemw .twpeople .figure{
+  width: 85rpx;
+  height: 85rpx;
+  border-radius:50%;
+  overflow:hidden;
+}
+.problemw .twpeople .figure image{
+  width: 85rpx;
+  height: 85rpx;
+  display:block;
+}
+.problemw .twpeople .dl{
+  width: 595rpx;
+  height: 85rpx;
+}
+.problemw .twpeople .dl .dd{
+  font-size: 24rpx;
+  font-weight: bold;
+  color: #1b1b1b;
+  height: 40rpx;
+  line-height: 40rpx;
+  overflow: hidden;
+}
+.problemw .twpeople .dl .dt{
+  font-size: 20rpx;
+  color: #a3a3a3;
+  line-height: 30rpx;
+  height: 30rpx;
+}
+.problemw .problem{
+  width: 695rpx;
+  max-height: 120rpx;
+  line-height: 60rpx;
+  overflow: hidden;
+  font-size: 30rpx;
+  color: #1d1c1d;
+  margin-top: 30rpx;
+}
+.problemw .tupshow{
+  margin-top: 30rpx;
+  max-height: 220rpx;
+  width: 695rpx;
+  overflow: hidden;
+}
+.problemw .tupshow image{
+  width: 215rpx;
+  height: 215rpx;
+  float: left;
+  margin-right: 10rpx;
+}
+.problemw .pd{
+  height: 30rpx;
+  width: 690rpx;
+  color: #454545;
+  line-height: 30rpx;
+  margin-top: 40rpx;
+}
+.problemw .pd .time{
+  font-size: 22rpx;
+}
+.problemw .pd image{
+  width: 35rpx;
+  height: 30rpx;
+  display: block;
+  margin-right: 5rpx;
+}
+.problemw .pd .hd{
+  font-size: 24rpx;
+  margin-left: 35rpx;
+}
+.allanswer{
+  padding: 0 15rpx;
+}
+.allanswer .qbhd{
+  height: 95rpx;
+  line-height: 95rpx;
+  margin-top: 20rpx;
+  font-size: 30rpx;
+  color: #222222;
+}
+.allanswer .answer{
+  width: 720rpx;
+}
+.allanswer .answer view-item{
+  width: 720rpx;
+  display: block;
+  background: #fff;
+  box-shadow: 0 0 8rpx rgba(4, 0, 0, 0.1);
+}
+.allanswer .answer .hdpeople{
+  padding: 25rpx 30rpx;
+}
+.answer .hdpeople .figure{
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.answer .hdpeople .figure image{
+  width: 70rpx;
+  height: 70rpx;
+}
+.answer .hdpeople .name{
+  display: block;
+  line-height: 70rpx;
+  font-size: 25rpx;
+  color: #232223;
+  margin-left: 20rpx;
+}
+.answer .hdpeople .time{
+  font-size: 22rpx;
+  color: #515351;
+  line-height: 70rpx;
+}
+.answer .hdtext{
+  font-size: 30rpx;
+  line-height: 35rpx;
+  padding:0 30rpx 40rpx 30rpx;
+  color: #141314;
+}
+.h65{
+  height: 65rpx;
+}
+.tjhdw{
+  padding: 0 15rpx;
+}
+.tjhdw .btit{
+  height: 70rpx;
+  line-height: 70rpx;
+  font-size: 30rpx;
+  color: #5e5e5e;
+}
+.tjhd textarea{
+  width: 720rpx;
+  height: 255rpx;
+  padding:10rpx;
+  text-indent: 10rpx;
+  background: #ffffff;
+ }
+.tjhd .tjw{
+  height: 55rpx;
+  margin-top: 35rpx;
+}
+.tjhd .tjw text{
+  display: block;
+  line-height: 55rpx;
+  font-size: 20rpx;
+  color: #cccccc;
+}
+.tjhd .tjw button{
+  width: 215rpx;
+  height: 55rpx;
+  line-height: 55rpx;
+  text-align: center;
+  font-size: 24rpx;
+  color: #ffffff;
+  background: #0e0e10;
+  border-radius: 0;
+}

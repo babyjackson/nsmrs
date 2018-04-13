@@ -1,0 +1,106 @@
+<!--pages/component/news/news.wxml-->
+<!--内容详情页面-->
+<view class="zxnrxq">
+ <text>冬至养生过好这一天 补对顶一年！</text>
+ <view class="bqsj clearfix">
+ <view class="bqtt">机械新闻</view>
+  <view class="sjx">2017/12/12</view>
+</view>
+<view class="bodyx">
+  <view class="">冬至进补有“四忌”！一汤一菜一茶饮，把握黄金进补冬至节。冬至，二十四节气之一，也是一年中最重要的节气之一，冬季从这一天已经过半，而后迎来数九寒天。</view>
+  <view class="img">
+    <image src="/img/allimg.jpg"></image>
+  </view>
+  <view>冬至养生</view>
+  <view>古人认为，冬三月是“生机潜伏、阳气内藏”的季节，应讲究“养藏之道”。民谚素有“三九补一冬，来年无病痛”、“今年冬令补，明年可打虎”之说。所以，冬至才真正开始“补冬”的黄金时期。</view>
+  <view>冬补虽好，但不能盲目，不是乱补。进补也要因人而异，要注意区别体质。冬至进补有“四忌”：一忌盲目跟风，二忌虚实不分，三忌慕名进补，四忌无病进补。
+一汤一菜一茶饮，把握住黄金进补的冬至节。</view>
+  <view>【一】冬至第一汤</view>
+  <view>冬至第一汤：当归生姜羊肉汤</view>
+  <view>冬季在五脏六腑中对应肾脏，而肾脏又主封藏，是收纳阳气的关键，因此，在阳气最弱的冬至前后，补肾阳是养生的主旋律。</view>
+  <view>对一般人来说，温补肾阳主要通过药膳方式即可，最著名的“当归生姜羊肉汤”就能很好地补气补血助阳。</view>
+</view>
+</view>
+<view class="h12"></view>
+<!--你可能看的资讯-->
+<view class="xgwz clearfix">
+  <view class="fl tit">相关文章</view>
+  <navigator class="fr more">更多></navigator>
+</view>
+<view class="con-item {{tabArr.curBdIndex=='0'? 'on' : ''}}">
+  <view class="mskx" wx:for="{{cnhhk}}" wx:for-index="key" wx:key="id">
+    <navigator url="{{item.navurl}}" class="clearfix">
+      <view class="fr img"><image src="{{item.imgSrc}}"></image></view>     
+      <view class="fl text">
+      <view class="tit">{{item.tit}}</view>
+      <view class="tips clearfix">
+        <text class="bq fl">{{item.tips}}</text>
+        <text class="time fr">{{item.time}}</text>
+        <view class="zan fr">
+          <image src="/img/zan.jpg" class="fl"></image>
+          <text class="fr">{{item.zan}}</text>
+        </view>
+        </view>
+      </view>
+    </navigator>
+  </view>
+</view>
+<!--用户评论-->
+<view class="userplw">
+  <view class="yhpl">用户评论</view>
+  <view class="userpl clearfix">
+    <view-firgue class="fl">
+      <image src="/img/allimg.jpg"></image>
+    </view-firgue>
+    <view class="dl fr">
+      <view class="dd clearfix">
+        <view class="user fl">用户2071828528</view>
+        <view class="zan fr"><image class="fl" src="/img/pjzan.jpg"></image><text class="fl">0</text></view>
+      </view>
+      <view class="txt">颜王颜王</view>
+      <view class="date">2017-10-17</view>
+    </view>
+  </view>
+  <!--没有更多评论了-->
+  <view class="nopll">
+    <view class="xian fl"></view>
+     没有更多评论了
+     <view class="xian fr"></view>
+  </view>
+</view>
+<!--底部-->
+<view class="h100"></view>
+<view class="footerw">
+  <view-footer class="clearfix">
+    <view class="fl fx">
+      <button>
+        <view><image src="/img/fx.jpg"></image></view>
+        <text>分享</text>
+      </button>
+    </view>
+    <view class="fl sc">
+      <button>
+        <view><image src="/img/sc.jpg"></image></view>
+        <text>收藏</text>
+      </button>
+    </view>
+    <view class="fl z">
+      <button>
+        <view><image src="/img/z.jpg"></image></view>
+        <text>0</text>
+      </button>
+    </view>
+    <view class="fl xx">
+      <button>
+        <view><image src="/img/xx.jpg"></image></view>
+        <text>0</text>
+      </button>
+    </view>
+    <!--说点什么-->
+    <view class="sdsm fr">
+      <view class="input">
+        <input type="text" placeholder="说点什么吧"></input>
+      </view>
+    </view>
+  </view-footer>
+</view>

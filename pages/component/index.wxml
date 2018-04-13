@@ -1,0 +1,278 @@
+<!--pages/component/index.wxml-->
+<!--轮播-->
+<view class="bantop">
+ <swiper  class="swiper-box" indicator-color="#000000" indicator-active-color="#e5e5e5" indicator-dots="true" autoplay="true" circular='true'>  
+    <block wx:for="{{banner}}" wx:for-index="key" wx:key="id">
+        <swiper-item>
+            <navigator><image src="{{item.imgsrc}}" class="slide-image" width="100%"/></navigator>
+        </swiper-item>
+    </block>
+  </swiper>
+</view>
+<!--菜单-->
+<view class='funcs'>
+  <view class='func' wx:for="{{menu}}" wx:for-item='item' wx:key="id">
+    <navigator url="{{item.urls}}">
+    <image src="{{item.url}}"></image>
+    <view class='name'>{{item.name}}</view>
+    </navigator>
+  </view>
+</view>
+<!--机械头条-->
+<view class="jxttW clearfix">
+  <view class="jxtttit fl clearfix">
+    <image src="/img/hftt.png"></image>
+  </view>
+  <swiper class="jxttul fl" vertical="true" autoplay="true" circular="true" interval="2000">
+    <block  wx:for="{{mskxnews}}" wx:for-index="key" wx:key="id">
+      <navigator url="{{item.url}}">
+        <swiper-item>
+         {{item.text}}
+        </swiper-item>
+      </navigator>
+    </block>
+  </swiper>
+</view>
+<!--搜索框-->
+<view class="ssw">
+  <view class="searchW">
+      <input bindinput="bindKeyInput" placeholder="请输入关键词" focus="{{focus}}" value="{{inputValue}}"/>
+      <button class="search"><image class="fl" src="/img/search.png"></image>搜索</button>
+    </view>
+</view>
+<view class="main">
+  <!--爆款-->
+  <view class="rxspW">
+    <view class="alltit clearfix">
+      <view class="fl xian"><image src="/img/xianz.png"></image></view>
+      <view class="fl zi">
+        <view class="zw">爆款商品</view>
+        <view class="yw">BAOKUANSHANGPIN</view>
+      </view>
+      <view class="fr xian"><image src="/img/xiany.png"></image></view>
+    </view>
+    <!--scroll-view-->
+    <view class="rxsp">
+      <scroll-view scroll-x="true" style="white-space: nowrap;overflow:hidden;" scroll-with-animation="true">
+        <!--  display: inline-block-->
+          <view style="width: 280rpx; height: 375rpx; display: inline-block" wx:for="{{rxsp}}" class="wfk" wx:key="id">
+            <view class="kj">
+              <view class="img">
+                <navigator url='{{item.ljgmurl}}'>
+                  <image src="{{item.imgsrc}}"></image>
+                </navigator>
+              </view>
+              <view class="tit">{{item.tit}}</view>
+              <view class="price">{{item.price}}</view>
+              <navigator><view class="ljgm"><image src="/img/ljgm.png"></image><text>立即购买</text></view></navigator>
+              <view class="sxian"></view>
+            </view>
+          </view>
+      </scroll-view>
+    </view>
+  </view>
+  <view class="h20"></view>
+  <!--优惠券-->
+  <view class="coupons">
+    <view class="alltit clearfix">
+      <view class="fl xian"><image src="/img/xianz.png"></image></view>
+      <view class="fl zi">
+        <view class="zw">优惠券</view>
+        <view class="yw">COUPON CENTER</view>
+      </view>
+      <view class="fr xian"><image src="/img/xiany.png"></image></view>
+    </view>
+    <scroll-view scroll-x="true" style="white-space: nowrap;overflow:hidden;" scroll-with-animation="true">
+      <view class="coupon" wx:for="{{coupons}}" wx:key="id">
+        <view class="coupbg">
+          <image src="/img/icoupbg.png"></image>
+        </view>
+        <view class="coup">
+          <view class="condition clearfix">
+            <view class="dl fl">
+              <view class="man">满{{item.man}}元使用</view>
+              <view class="receive">立即领取</view>
+            </view>
+            <view class="price fr"><text class="fl">¥</text>{{item.price}}</view>
+          </view>
+          <view class="date">
+            使用日期：{{item.datestart}}~{{item.dateend}}
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+  <!--绅士乐活-->
+  <view class="sslhw">
+    <view class="sstitw clearfix">
+      <view class="sstit clearfix">
+        <view class="fl xian"><image src="/img/ssxianz.png"></image></view>
+        <view class="fl zw">绅士乐活</view>
+        <view class="fr xian"><image src="/img/ssxiany.png"></image></view>
+      </view>
+      <view class="yw">THE GENTLEMAN LOHAS</view>  
+    </view>
+    <view class="sslh">
+      <view class="sstopb">
+        <navigator><image src="/img/allimg.jpg"></image></navigator>
+      </view>
+      <view class="dl">
+        <view class="tit">“颜王”向来步步为赢，会护肤的男人才有戏</view>
+        <view class="txt">如今小鲜肉当道，各路“鲜货”让身边的姑娘辗转难眠，更有直
+接在男明星微博下留言“我要嫁给你”，这一切都是高颜值带来...</view>
+        <view class="fb clearfix">
+          <view class="fl"><text>2018-01-23</text>发布</view>
+          <view class="fr"><text>300</text>浏览</view>
+          <view class="fr sx"><image src="/img/sx.png"></image></view>
+          <view class="fr"><text>320</text>收藏</view>
+        </view>
+      </view>
+      <view class="db">
+       <image src="/img/sslhdb.png"></image>
+      </view>
+    </view>
+  </view>
+  <!--品牌在线-->
+  <view class="ppzxW">
+    <view class="alltit clearfix">
+      <view class="fl xian"><image src="/img/xianz.png"></image></view>
+      <view class="fl zi">
+        <view class="zw">品牌在线</view>
+        <view class="yw">PINPAIZAIXIAN</view>
+      </view>
+      <view class="fr xian"><image src="/img/xiany.png"></image></view>
+    </view>
+    <view class="ppzx">
+      <image src="/img/mqtj.png"></image>
+      <view class="ppzxtt">
+        <view class="h50"></view>
+        <view class="tit">今日最大牌</view>
+        <view class="txt">超值优惠 品牌好货</view>
+        <view class="ul clearfix">
+          <view-item wx:for="{{ppzx}}" wx:for-index="key" wx:key="id">
+            <navigator url="{{item.url}}"><image src="{{item.imgsrc}}"></image></navigator>
+          </view-item>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!--社区-->
+  <view class="sqplw">
+    <view class="alltit clearfix">
+      <view class="fl xian"><image src="/img/xianz.png"></image></view>
+      <view class="fl zi">
+        <view class="zw">社区</view>
+        <view class="yw">COMMUNITY</view>
+      </view>
+      <view class="fr xian"><image src="/img/xiany.png"></image></view>
+    </view>
+    <view class="sqpl">
+      <swiper  class="swiper-box" indicator-color="rgba(0,0,0,0)" indicator-active-color="#0e0e10" indicator-dots="true">  
+        <block wx:for="{{sqpl}}" wx:for-index="key" wx:key="id">
+            <swiper-item>
+                <view class="h45"></view>
+                <view class="kj">
+                  <view class="top clearfix">
+                    <view class="tx fl"><image src="{{item.tx}}"></image></view>
+                    <view class="name fl">{{item.name}}</view>
+                    <view class="tw fl">{{item.wt}}</view>
+                  </view>
+                  <view class="con clearfix">
+                    <navigator class="cimg fl"><image src="{{item.imgsrc}}"></image></navigator>
+                    <view class="dl fr">
+                      <view class="tit">{{item.tit}}</view>
+                      <view class="txt">{{item.txt}}</view>
+                      <view class="gzw clearfix">
+                        <view class="fl"><image class="fl" src="/img/ll.png"></image>{{item.gz}}</view>
+                        <view class="fl"><image class="fl" src="/img/hd.png"></image>{{item.xx}}</view>
+                        <view class="fl"><image class="fl" src="/img/zd.png"></image>{{item.zz}}</view>
+                        <view class="fr sq">社区</view>
+                      </view>
+                    </view>
+                  </view>
+                </view>
+            </swiper-item>
+        </block>
+      </swiper>
+    </view>
+  </view>
+  <!--护肤方案-->
+  <view class="hffaw">
+    <view class="alltit clearfix">
+      <view class="fl xian"><image src="/img/xianz.png"></image></view>
+      <view class="fl zi">
+        <view class="zw">护肤方案</view>
+        <view class="yw">SKIN CARE PLAN</view>
+      </view>
+      <view class="fr xian"><image src="/img/xiany.png"></image></view>
+    </view>
+    <view class="hffa">
+      <view-item wx:for="{{hffa}}" wx:for-index="key" wx:key="id">
+        <view class="tit">{{item.tit}}</view>
+        <view class="img"><navigator url="{{item.url}}"><image src="{{item.imgsrc}}"></image></navigator></view>
+        <view class="txt">{{item.txt}}</view>
+        <view class="gzw clearfix">
+          <view class="fl"><image class="fl" src="/img/ck.png"></image>{{item.yl}}</view>
+          <view class="fl"><image class="fl" src="/img/pl.png"></image>{{item.pl}}</view>
+          <view class="fl"><image class="fl" src="/img/zz.png"></image>{{item.dz}}</view>
+          <navigator class="fr sq">详情</navigator>
+        </view>
+      </view-item>
+    </view>
+  </view>
+  <!--商城-->
+  <view class="sshfw">
+    <view class="alltit clearfix">
+      <view class="fl xian"><image src="/img/xianz.png"></image></view>
+      <view class="fl zi">
+        <view class="zw">商城</view>
+        <view class="yw">SHANGCHENG</view>
+      </view>
+      <view class="fr xian"><image src="/img/xiany.png"></image></view>
+    </view>
+    <view class="sshf">
+      <swiper  class="swiper-box" indicator-color="rgba(0,0,0,0)" indicator-active-color="#f0efef" indicator-dots="true">  
+        <block wx:for="{{sshf}}" wx:key="id">
+            <swiper-item>
+                <view class="kj">
+                  <view-item wx:for="{{item.sshfli}}" wx:for-item="sshfli" wx:key="id">
+                    <navigator class="clearfix">
+                      <view class="dl fl">
+                        <view class="tips">{{sshfli.tips}}</view>
+                        <view class="titzw">{{sshfli.tit}}</view>
+                        <view class="yw">{{sshfli.yw}}</view>
+                      </view>
+                      <view class="img fr"><image src="{{sshfli.imgsrc}}"></image></view>
+                    </navigator>
+                  </view-item>
+                </view>
+            </swiper-item>
+        </block>
+      </swiper>
+    </view>
+  </view>
+  <!--为你推荐-->
+  <view class="wntjw">
+    <view class="alltit clearfix">
+      <view class="fl xian"><image src="/img/xianz.png"></image></view>
+      <view class="fl zi">
+        <view class="zw">为你推荐</view>
+        <view class="yw">WEINITUIJIAN</view>
+      </view>
+      <view class="fr xian"><image src="/img/xiany.png"></image></view>
+    </view>
+    <view class="wntj">
+      <view-item wx:for="{{wntj}}" wx:for-index="key" wx:key="id">
+        <navigator class="img">
+          <image src="{{item.imgsrc}}"></image>
+        </navigator>
+        <view class="tit">{{item.tit}}</view>
+        <view class="pj">
+          <view class="price">{{item.price}}</view>
+          <button class="jrgwc">加入购物车</button>
+        </view>
+      </view-item>
+    </view>
+  </view>
+</view>
+

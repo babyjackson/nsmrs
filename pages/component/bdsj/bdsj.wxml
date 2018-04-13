@@ -1,0 +1,18 @@
+<!--input.wxml-->
+<form>
+<view class="section clearfix">
+  <view class="text fl">真实姓名</view>
+  <input placeholder="请输入您的真实姓名" auto-focus class="fl" name="name"/>
+</view>
+<view class="section clearfix">
+  <view class="text fl" name="del">手机号</view>
+  <input placeholder="请输入您的手机号码" auto-focus class="fl"/>
+  <button class="sendmsg fl" bindtap="getVerificationCode" disabled="{{disabled}}" >{{time}}</button>
+</view>
+<view class="section clearfix">
+  <view class="text fl">验证码</view>
+  <input placeholder="请输入验证码" auto-focus class="fl" name="code"/>
+</view>
+<button class="tjbd">提交绑定</button>
+</form>
+

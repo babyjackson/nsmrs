@@ -1,0 +1,64 @@
+<!--pages/component/yy/ddyy/ddyy.wxml-->
+<!--预约的商品-->
+<view class="yygoods clearfix">
+  <view class="h35"></view>
+  <view class="figure fl">
+    <image src="/img/allimg.jpg"></image>
+  </view>
+  <view class="dl fl">
+    <view class="tit">桃子家猫咪洗澡服务</view>
+    <view class="txt">套餐：洗澡，吹干，洗耳朵，剪脚掌毛，剪手指甲</view>
+  </view>
+  <view class="ol fr">
+    <view class="price">¥40</view>
+    <view class="h35"></view>
+    <view class="num">x1</view>
+  </view>
+</view>
+<!--预约信息-->
+<form>
+  <view class="yyxxw">
+    <view class="section clearfix">
+      <view class="fl attri">姓名</view>
+      <view class="fr input">
+        <input value="喵大人"></input>
+      </view>
+    </view>
+    <view class="section clearfix">
+      <view class="fl attri">联系电话</view>
+      <view class="fr input">
+        <input value="喵大人"></input>
+      </view>
+    </view>
+    <view class="section clearfix">
+      <view class="fl attri">联系地址</view>
+      <view class="fr input">
+        <input value="喵大人"></input>
+      </view>
+    </view>
+    <view class="section clearfix">
+      <view class="fl attri">服务时间</view>
+      <view class="fr input">
+        <input value="喵大人"></input>
+      </view>
+    </view>
+    <view class="section clearfix">
+      <view class="fl attri">给谁预定</view>
+      <view class="fr input">
+        <radio-group>
+          <label>
+          <radio value="" color="#ffca12" size="10"/>自己</label>
+          <label><radio value="" color="#ffca12" size="10"/>他人</label>
+        </radio-group>
+      </view>
+    </view>
+    <view class="textarea">
+      <textarea placeholder="如有特殊情况请留言"></textarea>
+    </view>
+  </view>
+  <view class="h30"></view>
+  <view class="ypay">预计实付<text>40元</text></view>
+  <view class="h170"></view>
+  <button class="ljyy">立即预约</button>
+</form>
+  

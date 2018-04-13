@@ -1,0 +1,139 @@
+<!--pages/component/mqxq/mqxq.wxml-->
+<view class="topmqxq">
+  <view class="bgimg">
+    <image src="/img/ppdptop.jpg"></image>
+  </view>
+  <view class="topwrap">
+    <view class="searchW">
+      <input bindinput="bindKeyInput" placeholder="请输入搜索内容" focus="{{focus}}" value="{{inputValue}}"/>
+      <button class="search"><icon type="search" size="20"/></button>
+    </view>
+    <view class="h60"></view>
+    <view class="dpinfo clearfix">
+      <view class="fl imgdp">
+        <image src="/img/allimg.jpg"></image>
+      </view>
+      <view class="fl dp">
+        <view class="tit">自然堂男士护肤旗舰店</view>
+        <view class="xl clearfix">
+          <view class="xlnum fl">
+            <image class="fl" src="/img/xlnumico.png"></image>
+            <text class="fl">3965</text>
+          </view>
+          <view class="scnum fl">
+            <image class="fl" src="/img/scnumico.png"></image>
+            <text class="fl">258</text>
+          </view>
+        </view>
+      </view>
+      <button class="sc">
+        <image class="fl" src="/img/bsc.png"></image>
+        <text class="fl">收藏</text>
+      </button>
+    </view>
+  </view>
+</view>
+<!--排序-->
+<!--tab切换-->
+<view class="mszxTab clearfix" bindtap="tabFun">   
+  <view class="{{tabArr.curHdIndex=='0'? 'active' : ''}}" id="tab-hd01" data-id="0">公司首页</view>   
+  <view class="{{tabArr.curHdIndex=='1'? 'active' : ''}}" id="tab-hd02" data-id="1">全部宝贝</view>
+  <view class="{{tabArr.curHdIndex=='2'? 'active' : ''}}" id="tab-hd03" data-id="2">新品上架</view>
+</view> 
+<view class="mqzxcon">
+  <view class="con-item {{tabArr.curBdIndex=='0'? 'on' : ''}}">
+    <view class="h15"></view>
+    <!--热卖好货-->
+    <view class="best_sell">
+      <view class="all_big_tit_w">
+        <view class="all_big_tit">
+          <view class="imgwp">
+            <image src="/img/all_big_tit_img.png"></image>
+          </view>
+          <view class="txtw">
+            <view class="zw">热卖好货</view>
+            <view class="yw">/BEST SELLERS/</view>
+          </view>
+        </view>
+      </view>
+      <view class="bprm clearfix">
+        <view-item wx:for="{{mqzxcon}}" wx:key="id">
+          <navigator class="img" url="{{item.url}}">
+            <image src="{{item.imgsrc}}"></image>
+          </navigator>
+          <view class="tit">{{item.tit}}</view>
+          <view class="prw clearfix">
+            <view class="price fl">{{item.price}}</view>
+            <button class="gwc fr">加入购物车</button>
+          </view>
+        </view-item>
+      </view>
+    </view>
+    <!--为你推荐-->
+    <view class="recommendw">
+      <view class="all_big_tit_w">
+        <view class="all_big_tit">
+          <view class="imgwp">
+            <image src="/img/all_big_tit_img.png"></image>
+          </view>
+          <view class="txtw">
+            <view class="zw">为你推荐</view>
+            <view class="yw">/RECOMMEND/</view>
+          </view>
+        </view>
+      </view>
+      <view class="bprm clearfix">
+        <view-item wx:for="{{mqzxcon}}" wx:key="id">
+          <navigator class="img" url="{{item.url}}">
+            <image src="{{item.imgsrc}}"></image>
+          </navigator>
+          <view class="tit">{{item.tit}}</view>
+          <view class="prw clearfix">
+            <view class="price fl">{{item.price}}</view>
+            <button class="gwc fr">加入购物车</button>
+          </view>
+        </view-item>
+      </view>
+    </view>
+   </view> 
+  <view class="clearfix con-item {{tabArr.curBdIndex=='1'? 'on' : ''}}">
+    <!--内容-->
+    <view class="datacon">
+      <view class="bprm clearfix">
+        <view-item wx:for="{{mqzxcon}}" wx:key="id">
+          <navigator class="img" url="{{item.url}}">
+            <image src="{{item.imgsrc}}"></image>
+          </navigator>
+          <view class="tit">{{item.tit}}</view>
+          <view class="prw clearfix">
+            <view class="price fl">{{item.price}}</view>
+            <button class="gwc fr">加入购物车</button>
+          </view>
+        </view-item>
+      </view>
+    </view>
+  </view>
+  <view class="clearfix con-item {{tabArr.curBdIndex=='2'? 'on' : ''}}">
+    3
+  </view>
+</view>
+<!--底部-->
+<view class="h90"></view>
+<view class="dpxqfooter">
+  <view class="flex">
+    <view>
+      <button class="clearfix">
+        <image class="fl" src="/img/kefu.png"></image>
+        <text class="fl">联系客服</text>
+      </button>
+    </view>
+    <view>
+      <navigator class="clearfix" url="/pages/component/shopsinfo/shopsinfo">
+        <image class="fl" src="/img/shopsinfo.png"></image>
+        <text class="fl">商铺信息</text>
+      </navigator>
+    </view>
+    <view-xian></view-xian>
+  </view>
+</view>
+

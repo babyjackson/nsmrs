@@ -1,0 +1,315 @@
+/* pages/component/news/news.wxss */
+@import '../../common/common.wxss';
+
+.fl{
+  float:left;
+}
+.fr{
+  float:right;
+}
+.clearfix:after {/***加在元素父级清除浮动*****/
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.h12{
+  height: 12rpx;
+  background: #eeeeee;
+}
+.zxnrxq{ width:100%; margin:0 auto; clear:both; overflow:hidden; margin-top:30rpx; padding-left:2%; padding-right:2%}
+
+.zxnrxq text{ width:100%; float:left; color:#000000; font-size:20px; height:40rpx;}
+
+.zxnrxq  .bqsj{ width:100%; float:left; margin-top:20px; clear:both; margin-bottom:30px}
+.zxnrxq  .bqsj .bqtt{ float:left; font-size:14px; line-height:30rpx;color: #a1a1a1;margin-left:22px;}
+.fenx{
+  width: 40rpx;
+  height:40rpx;
+  position: relative;
+  top: -10rpx;
+}
+.fenx button{
+  width: 40rpx;
+  height: 40rpx;
+  position: relative;
+  display: block;
+  outline: 0;
+  border: 0;
+  background:rgba(0, 0, 0, 0);
+}
+.fenx button image{
+  width: 40rpx;
+  height: 40rpx;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.zxnrxq  .bqsj .sjx{ float:left; color:#a1a1a1; font-size:14px;line-height:30rpx;}
+
+.bodyx{float:left; color:#2d2d2d; font-size:14px; margin-bottom:70rpx;}
+
+.nknkd{ width:100%; float:left; border-top:8rpx #eee solid;}
+
+.nknkd .bqx{ width:100%; float:left; font-size:40rpx; margin-top:20px; text-align:center; color:#2c2c2c;border-bottom:1px #e5e5e5 solid; padding-bottom:15px}
+.bodyx .img{
+  width: 715rpx;
+  height: 395rpx;
+  margin: 0 auto;
+}
+.bodyx .img image{
+   width: 715rpx;
+  height: 395rpx;
+}
+.cnhhk{
+  font-size: 32rpx;
+  color: #2c2c2c;
+  text-align: center;
+  line-height: 30rpx;
+  padding: 25rpx 0;
+  border-bottom: 1rpx solid #e5e5e5;
+}
+.contmszx{ 
+  display: block; 
+  height: 100%; 
+  width: 100%; 
+  overflow: hidden;
+  }  
+.con-item{  
+    display: block; 
+    width:100%;
+}  
+.on{
+  display: block;
+} 
+
+.con-item .mskx{
+padding: 20rpx 15rpx;
+border-bottom: 2px solid #e4e4e4;
+}
+.con-item .img{
+  width: 315rpx;
+  height:215rpx;
+}
+.con-item .img image{
+  width: 315rpx;
+  height:215rpx;
+}
+.con-item .text{
+  width: 375rpx;
+  height: 210rpx;
+  margin-left: 20rpx;
+}
+.con-item .text .tit{
+  font-weight: bold;
+  font-size: 30rpx;
+  color: #030303;
+}
+.con-item .text .tips{
+  height: 30rpx;
+  margin-top: 70rpx;
+  color: #a5a5a5;
+  font-size: 26rpx;
+  line-height: 30rpx;
+}
+.con-item .text .tips .time{
+  margin-left: 60rpx;
+}
+.con-item .text .zan image{
+width: 25rpx;
+height: 25rpx;
+margin-right: 10rpx;
+}
+.con-item .text .tips .bq{
+  width: 100rpx;
+  height: 25rpx;
+  color: #a9a9a9;
+  text-align: center;
+  line-height: 25rpx;
+  font-size: 21rpx;
+}
+.clearkaxxx{ width:100%; margin:0 auto; clear:both; overflow:hidden; height:60px}
+.dibu{position: fixed;bottom: 0;width: 100%; background:#fff}
+.address-list{margin-bottom:0px; border-top:2px #bebfbe solid; width:100%; float:left}
+.address-list .dianz{border-right:2px #bebfbe solid;}
+.address-list .dianz .shuzi,.address-list .xiaol .shuzi{ float:left; width:100%; font-size:14px; color:#2b2e2b; text-align:center; line-height:25rpx; margin-top:4px;}
+.address-list .dianz image,.address-list .xiaol image{ width:35rpx; height:35rpx; float:left; margin-left:12%; margin-right:4%}
+
+.address-list .dianz image{ margin-left:10% !important}
+
+.address-list .dianz .wzkk,.address-list .xiaol .wzkk{ width:100%; float:left; margin-top:7px; line-height:35rpx; margin-right:2px; background:none}
+.address-list .dianz .mingz,.address-list .xiaol .mingz{ float:left;font-size:14px; color:#2b2e2b;}
+.address-list .dianz,.address-list .xiaol{ width:23%; float:left;height:90rpx;}
+.address-list .fenx{ width:54%; float:right; background:#47c972; height:90rpx; line-height:90rpx; color:#fff;border-radius: 0}
+.imkhk{ width:29rpx; height:29rpx; float:left; margin-top:15px; margin-left:28%;}
+.address-list text{ font-size:24rpx; float:left; margin-left:1%}
+button::after{
+border: none;
+}
+
+.xgwz{
+  height: 90rpx;
+  padding: 0 15rpx;
+  line-height: 90rpx;
+  border-bottom: 1rpx solid #e5e5e5;
+}
+.xgwz .tit{
+  font-size: 35rpx;
+  color: #2c2c2c;
+
+}
+.xgwz .more{
+  font-size: 24rpx;
+  color: #777777;
+}
+.h20{
+  height: 20rpx;
+}
+.userplw{
+  background: #f7f7f7;
+  padding: 0 25rpx;
+}
+.userplw .yhpl{
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 26rpx;
+  color: #161416;
+}
+.userpl{
+  width: 700rpx;
+}
+.userpl view-firgue{
+  display: block;
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-top: 10rpx;
+}
+.userpl view-firgue image{
+  width: 70rpx;
+  height: 70rpx;
+}
+.userpl .dl{
+  width: 590rpx;
+}
+.userpl .dl .dd{
+  height: 35rpx;
+  width: 590rpx;
+  overflow: hidden;
+}
+.userpl .dl .dd .user{
+  font-size: 22rpx;
+  color: #888688;
+}
+.userpl .dl .dd .zan{
+  height: 35rpx;
+}
+.userpl .dl .dd .zan image{
+  width: 35rpx;
+  height: 35rpx;
+  display: block;
+}
+.userpl .dl .dd .zan text{
+  font-size: 22rpx;
+  color: #817f81;
+  line-height: 35rpx;
+}
+.userpl .dl .txt{
+  font-size: 22rpx;
+  color: #1c1b1c;
+  line-height: 35rpx;
+}
+.userpl .dl .date{
+  font-size: 22rpx;
+  color: #848384;
+  line-height: 30rpx;
+}
+.nopll{
+  width:530rpx;
+  height: 100rpx;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 22rpx;
+  color: #7a787a;
+  line-height: 100rpx;
+}
+.nopll .xian{
+  width: 150rpx;
+  height: 3rpx;
+  background: #e6e1e6;
+  margin-top: 50rpx;
+}
+.footerw{
+  width: 750rpx;
+  height: 100rpx;
+  position: fixed;
+  bottom: 0;
+  background: #fff;
+}
+.footerw view-footer{
+  width: 750rpx;
+  height: 100rpx;
+  display: block;
+}
+.footerw .fx{
+  width: 45rpx;
+}
+.footerw view-footer>view{
+  width: 45rpx;
+  margin: 0 30rpx;
+}
+.footerw view button{
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 45rpx;
+  height: 100rpx;
+  border: 0;
+  outline: 0;
+  border-radius: 0;
+  background:rgba(0, 0, 0, 0);
+}
+.footerw view button view{
+  padding: 10rpx 0;
+}
+.footerw view button image{
+  width: 45rpx;
+  height: 45rpx;
+  display: block;
+}
+.footerw view button text{
+  line-height: 25rpx;
+  font-size: 22rpx;
+  color: #818181;
+  display: block;
+}
+.footerw .sdsm{
+  width: 300rpx;
+  margin: 0 30rpx 0 0;
+  
+  padding-top: 20rpx;
+}
+.footerw .sdsm .input{
+  width: 300rpx;
+  height: 60rpx;
+  border:2rpx solid #d6d3d6;
+  border-radius: 32rpx;
+  overflow: hidden;
+}
+.footerw .sdsm .input input{
+  width: 300rpx;
+  height: 60rpx;
+  display: block;
+  background: #ffffff;
+  font-size: 22rpx;
+  color: #797979;
+  outline: 0;
+  border: 0;
+  text-indent: 10rpx;
+}
+.h100{
+  height: 100rpx;
+}

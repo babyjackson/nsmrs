@@ -1,0 +1,117 @@
+/* pages/component/sq/sq.wxss */
+@import '../../../common/common.wxss';
+.fl{
+  float:left;
+}
+.fr{
+  float:right;
+}
+.clearfix:after {/***加在元素父级清除浮动*****/
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+page{
+  background: #f0efef;
+}
+.sqbigtit{
+  font-size: 30rpx;
+  color: #181818;
+  height: 85rpx;
+  line-height: 85rpx;
+  padding:0 15rpx;
+  font-weight: bold;
+}
+.squl{
+  padding: 0 15rpx;
+}
+.squl view-item{
+  display: block;
+  width: 720rpx;
+  height: 245rpx;
+  background: #fff;
+  box-shadow: 0 0 8rpx rgba(1,4,0,0.1);
+  overflow: hidden;
+  margin-bottom: 25rpx;
+}
+.squl view-item .tit{
+  font-size: 28rpx;
+  color: #23242a;
+  line-height: 50rpx;
+  height: 135rpx;
+  padding:35rpx 30rpx 25rpx 30rpx;
+  overflow:hidden;
+}
+.squl view-item .tit view-wen{
+  width: 40rpx;
+  height: 40rpx;
+  font-size: 30rpx;
+  color: #ffffff;
+  text-align: center;
+  line-height: 40rpx;
+  background: #fecd06;
+  display: block;
+}
+.squl view-item .tit .t{
+  line-height: 40rpx;
+  text-indent: 10rpx;
+}
+.squl view-item .textw{
+  margin: 0 25rpx;
+  width: 650rpx;
+  height: 75rpx;
+}
+.squl view-item .textw .figure{
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.squl view-item .textw .figure image{
+  width: 70rpx;
+  height: 70rpx;
+  display: block;
+}
+.squl view-item .textw .text{
+  width: 560rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  overflow: hidden;
+  font-size: 24rpx;
+  color:#4a4a4a;
+}
+.wytw{
+  height: 75rpx;
+  width: 750rpx;
+  outline: 0;
+  border-radius: 0;
+  display: block;
+  background: #fff;
+  border-left:0;
+  border-right: 0;
+  border-top: 1rpx solid #fecd06;
+  border-bottom: 1rpx solid #fecd06;
+}
+.wytw .tw{
+  width: 180rpx;
+  height: 40rpx;
+  padding-top:13rpx;
+  margin: 0  auto; 
+}
+.wytw .tw .img{
+  width: 40rpx;
+  height: 40rpx;
+}
+.wytw .tw .img image{
+  width: 40rpx;
+  height: 40rpx;
+  display: block;
+}
+.wytw .tw .tx{
+  line-height: 40rpx;
+  font-size:30rpx;
+  color: #fecd06;
+  margin-left: 10rpx;
+}

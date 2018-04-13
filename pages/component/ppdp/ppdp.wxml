@@ -1,0 +1,18 @@
+<!--品牌在线-->
+<view class="ppdpw" wx:for="{{ppdpinfo}}" wx:key="id">
+  <view class="dptitw clearfix">
+    <view class="fl dplogo"><image src="{{item.dplogo}}"></image></view>
+    <view class="fl tit">{{item.tit}}</view>
+    <view class="fl num">总销量 {{item.num}}</view>
+    <navigator url="{{item.url}}" class="fr jrdp">进入店铺</navigator> 
+  </view>
+  <view class="ppdpul clearfix">
+    <view-item wx:for="{{item.ppdpgoods}}" wx:for-item="goods" class="fl" wx:key="id">
+      <navigator url="{{goods.url}}"><image src="{{goods.goodsimg}}"></image></navigator>
+    </view-item>
+  </view>
+</view>
+<!--底部-->
+<view class="h140"></view>
+<import src="../../../template/template.wxml"/>
+<template is="tabBar" data="{{tabBar:bindData.tabBar}}"/>

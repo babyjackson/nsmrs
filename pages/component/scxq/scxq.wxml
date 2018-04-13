@@ -1,0 +1,151 @@
+<!--轮播-->
+<view class="swiper">
+ <swiper  class="swiper-box" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">  
+    <block wx:for="{{swiperImg}}" wx:for-index="key" wx:key="id">
+        <swiper-item>
+            <image src="{{item.imgUrl}}" class="slide-image" width="100%"/>
+        </swiper-item>
+    </block>
+  </swiper>
+</view>
+<!--标题-->
+<view class="detailTit">
+  <text class="tit">San Peter/s圣彼得San Peter/s圣彼得San Peter/s圣彼得San Peter/s圣彼得</text>
+  <view><text class="price">¥258.00</text><text>库存: 43087</text><text>销量: 2</text></view>
+</view>
+<!--优惠活动-->
+<view class="h-15"></view>
+<view class="couponsw" wx:if="{{coupons.length !=0}}">
+  <view class="tit">优惠活动</view>
+  <view class="coupons">
+    <view class="item" wx:for="{{coupons}}" wx:key="id">
+      <view class="bgcoup">
+        <image src="/img/coupbg.png"></image>
+      </view>
+      <view class="coupw">
+        <view class="coupt clearfix">
+          <view class="fvalue fl"><text>¥</text>{{item.price}}</view>
+          <view class="zcoup fl">
+           <view class="ti">优惠券</view>
+           <view class="man">满{{item.man}}元使用</view>
+          </view>
+          <view class="getcoup fr">立即领取</view>
+        </view>
+        <view class="time">有效时间：{{item.time1}}至{{item.time2}}</view>
+      </view>
+    </view>
+  </view>
+</view>
+<!--等级-->
+<view class="h-15"></view>
+<view class="gradeGoods">
+  <view class="top clearfix">
+    <view class="fl img"><image src="/img/gradetitlogo.jpg"></image></view>
+      <view class="tit fl">
+        <view><text class="big">江苏机械设备平台</text></view>
+        <view><text class="small">经营机械设备、五金工具</text></view>
+      </view>
+  </view>
+  <view class="gradeLi clearfix">
+    <view class="wk">
+      <view class="tit"><text>实物外观</text></view>
+      <view class="wyuan">
+        <view class="nyuan">
+          <text>5</text>
+        </view>
+      </view>
+    </view>
+    <view class="wk">
+      <view class="tit"><text>商品质量</text></view>
+      <view class="wyuan">
+        <view class="nyuan">
+          <text>5</text>
+        </view>
+      </view>
+    </view>
+    <view class="wk">
+      <view class="tit"><text>服务质量</text></view>
+      <view class="wyuan">
+        <view class="nyuan">
+          <text>5</text>
+        </view>
+      </view>
+    </view>
+    <view class="wk">
+      <view class="tit"><text>配送效率</text></view>
+      <view class="wyuan">
+        <view class="nyuan">
+          <text>5</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="h-15"></view>
+<!--详情tab切换-->
+<view class="detailTab clearfix" bindtap="tabFun">   
+  <view class="{{tabArr.curHdIndex=='0'? 'active' : ''}}" id="tab-hd01" data-id="0">图文详情</view>   
+  <view class="{{tabArr.curHdIndex=='1'? 'active' : ''}}" id="tab-hd02" data-id="1">商品评价</view>   
+  <view class="{{tabArr.curHdIndex=='2'? 'active' : ''}}" id="tab-hd03" data-id="2">相关推荐</view>  
+</view>   
+<!--图片详情-->
+<view class="contDetail">   
+  <view class="con-item {{tabArr.curBdIndex=='0'? 'on' : ''}}">
+    <view class="detailImg" wx:for="{{detailImg}}" wx:for-index="key" wx:key="id">
+      <view-item>
+            <image src="{{item.imgUrl}}" class="slide-image" width="100%"/>
+      </view-item>
+    </view>
+  </view>
+  <!--商品评价-->
+  <view class="con-item {{tabArr.curBdIndex=='1'? 'on' : ''}}">
+    <view class="evaluate" wx:for="{{evaluate}}" wx:for-index="key" wx:key="id">
+      <view-item>
+        <view class="user clearfix">
+          <view class="fl img"><image src="{{item.imgUserUrl}}"></image></view>
+          <view class="fl text"><text>{{item.userName}}</text></view>
+        </view>
+        <view class="describe"><text>{{item.userDescribe}}</text></view>
+        <view class="sai clearfix"><view><image src="{{item.certeauImg}}"></image></view></view>
+        <view class="time"><text>{{item.time}}</text></view>
+      </view-item>
+    </view>
+  </view>
+  <!--相关推荐-->
+  <view class="con-item {{tabArr.curBdIndex=='2'? 'on' : ''}}">
+    <view class="recommendxg clearfix">
+      <view-item  wx:for="{{relevantTj}}" wx:for-index="key" wx:key="id">
+        <navigator url="{{item.navurl}}">
+          <view class="img"><image src="{{item.imgti}}"></image></view>
+          <view class="tit"><text>{{item.tit}}</text></view>
+        </navigator>
+        <view class="pj">
+          <view class="price">{{item.price}}</view>
+          <button class="jrgwc">加入购物车</button>
+        </view>
+      </view-item>
+    </view>
+  </view>   
+</view>
+<!--底部--> 
+<view class="detailk"></view>
+<view class="detailbot clearfix">
+  <navigator class="shouye">
+    <view><image src="/img/sc.png"></image></view>
+    <text>收藏</text>
+  </navigator>
+  <navigator class="kefu">
+    <view><image src="/img/gwcico.jpg"></image></view>
+    <text>客服</text>
+  </navigator>
+  <navigator class="gwc">
+    <view><image src="/img/gwcico.jpg"></image></view>
+    <text>购物车</text>
+  </navigator>
+  <button class="jrgwc">
+    <text>加入购物车</text>
+  </button>
+  <button class="ljgm">
+    <text>立即购买</text>
+  </button>
+</view>

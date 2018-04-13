@@ -1,0 +1,69 @@
+<!--pages/component/sqw/wdxq/wdxq.wxml-->
+<!--问题-->
+<view class="problemw">
+  <view class="twpeople clearfix">
+    <view class="figure fl">
+      <image src="/img/allimg.jpg"></image>
+    </view>
+    <view class="dl fr">
+      <view class="dd">小雷汽车维修12351</view>
+      <view class="dt">问于2017-12-15</view>
+    </view>
+  </view>
+  <view class="problem">
+    09年，颜王在睡觉前认真的洗脸是非常重要的，当你在外..
+  </view>
+  <view class="tupshow clearfix">
+    <image src="/img/allimg.jpg"></image>
+  </view>
+  <view class="pd clearfix">
+    <view class="fl time">15小时前</view>
+    <view class="fr hd clearfix">
+      <image class="fl" src="/img/hdwt.png"></image>
+      <text class="fl">99</text>
+    </view>
+    <view class="fr gz clearfix">
+      <image class="fl" src="/img/sqgz.png"></image>
+      <text class="fl">45</text>
+    </view>
+  </view>
+</view>
+<!--全部回答-->
+<view class="allanswer">
+  <view class="qbhd">全部回答</view>
+  <view class="answer">
+    <view-item>
+      <view class="hdpeople clearfix">
+        <view class="fl clearfix">
+          <view class="figure fl">
+            <image src="/img/allimg.jpg"></image>
+          </view>
+          <view class="name fr">韩甲文</view>
+        </view>
+        <view class="fr time">15小时前</view>
+      </view>
+      <view class="hdtext">
+        车主你好，是做什么项目开来？
+      </view>
+    </view-item>
+  </view>
+</view>
+<view class="h65"></view>
+<!--添加回答-->
+<view class="tjhdw">
+  <view class="btit">添加回答</view>
+  <view class="tjhd">
+    <form>
+      <textarea placeholder="" name="textarea" bindinput="bindWordLimit"/>
+      <view class="tjw clearfix">
+        <text class="fl">已输入 {{currentNoteLen}} 字</text>
+        <button form-type="submit" class="fr"> 提交 </button>
+      </view>
+    </form>
+  </view>
+  <view class="h65"></view>
+</view>
+<!--底部-->
+<view class="h140"></view>
+<import src="../../../../template/template.wxml"/>
+<template is="tabBar" data="{{tabBar:bindData.tabBar}}"/>

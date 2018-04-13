@@ -1,0 +1,468 @@
+/* pages/component/index.wxss */
+@import '../../common/common.wxss';
+.fl{
+  float:left;
+}
+.fr{
+  float:right;
+}
+.clearfix:after {/***加在元素父级清除浮动*****/
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.swiper{
+  width: 100%;
+  height: 750rpx;
+}
+.swiper-box{
+  width: 100%;
+  height:750rpx;
+}
+swiper-item{
+  width: 100%;
+  height:750rpx;
+}
+swiper-item image{
+width: 100%;
+height: 750rpx;
+}
+.detailTit{
+  width: 100%;
+  padding:0 40rpx;
+  height: 165rpx;
+  background-color: #fff;
+}
+.detailTit .tit{
+  color: #000000;
+  font-size: 28rpx;
+  line-height: 30rpx;
+}
+.detailTit view{
+  font-size: 28rpx;
+  color: #c2c3c2;
+  padding-bottom: 5rpx;
+  height: 60rpx;
+}
+.detailTit view .price{
+  color: #ed2b28;
+  font-size: 30repx;
+  margin-left:0;
+}
+.detailTit view text{
+  margin-left:35rpx;
+}
+.gradeGoods{
+width: 100%;
+padding: 25rpx 15rpx;
+}
+.gradeGoods .top{
+  width: 100%;
+  height: 90rpx;
+}
+.gradeGoods .top .img{
+  width: 90rpx;
+  height: 90rpx;
+}
+.gradeGoods .top .img image{
+  width:90rpx;
+  height:80rpx;
+
+}
+.gradeGoods .top .tit{
+  width: 425rpx;
+  margin-left:10rpx;
+  line-height: 40rpx;
+}
+.gradeGoods .top .tit .big{
+ font-size: 32rpx;
+ color: #363636;
+}
+.gradeGoods .top .tit .small{
+  font-size: 20rpx;
+  color:#5b5b5b;
+}
+.h-15{
+  height: 15rpx;
+  background-color: #f7f7f7;
+}
+.gradeLi{
+  width: 100%;
+  padding-top:50rpx; 
+}
+.gradeLi .wk{
+  width: 25%;
+  float:left;
+}
+.gradeLi .wk .tit{
+  font-size: 22rpx;
+  color:#c5c3c4;
+  text-align: center;
+}
+.gradeLi .wk .wyuan{
+  width: 66rpx;
+  height:66rpx;
+  border:4rpx solid #94cb6b;
+  border-radius: 50%;
+  overflow: hidden;
+  text-align: center;
+  margin: 0 auto;
+}
+.gradeLi .wk .nyuan{
+  width: 50rpx;
+  height: 50rpx;
+  background-color: #94cb6b;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 5rpx auto;
+  line-height: 50rpx;
+  text-align: center
+}
+.gradeLi .wk .nyuan text{
+  color: #fff;
+  font-size: 22rpx;
+}
+.detailTab{  
+    width: 100%;  
+    border-bottom: 1rpx solid #e5e5e5;  
+    text-align: center;  
+    line-height: 70rpx;
+    font-size: 24rpx;
+    color: #9d9c9c;
+    margin-bottom: 25rpx;
+    display: flex;
+    }  
+.detailTab view{  
+  font-size: 30rpx;  
+  display: inline-block;  
+  width: 33.33%;  
+  border-bottom: 4rpx solid #fff;
+}  
+.detailTab .active{ 
+  color: #23242a;  
+  border-bottom: 4rpx solid #23242a;
+  }  
+
+.contDetail{ 
+  display: block; 
+  height: 100%; 
+  width: 100%; 
+  overflow: hidden;
+  }  
+.con-item{  
+    display: none; width:100%;
+}  
+.on{
+  display: block;
+} 
+.detailImg{
+  width: 100%;
+}
+.detailImg image{
+  width: 100%;
+  height: 520rpx;
+}
+.evaluate{
+ 
+  margin: 0 15rpx;
+  border-bottom: 2px solid #eee9ef;
+  padding-bottom: 30rpx;
+}
+.evaluate .user{
+  height: 45rpx;
+}
+.evaluate .user .img{
+  width:45rpx;
+  height: 45rpx;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.evaluate .user .img image{
+  width: 45rpx;
+  height: 45rpx;
+}
+.evaluate .user .text{
+  width: 240rpx;
+  line-height: 45rpx;
+  font-size: 20rpx;
+  color: #bfbdc0;
+}
+.evaluate .describe{
+  font-size: 22rpx;
+  color:#000000;
+  line-height: 30rpx;
+}
+.evaluate .sai view{
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 3rpx;
+  float: left;
+  margin: 10rpx;
+}
+.evaluate .sai view image{
+  width: 80rpx;
+  height: 80rpx;
+}
+.evaluate .time{
+ color: #b2b0b3;
+line-height: 30rpx;
+ font-size: 18rpx;
+
+}
+.recommendxg{
+  padding: 15rpx 20rpx 0 20rpx;
+  background: #f0efef;
+}
+.recommendxg view-item{
+  width: 330rpx;
+  background: #fff;
+  margin-bottom: 15rpx;
+  height: 500rpx;
+  padding: 10rpx;
+}
+.recommendxg view-item:nth-of-type(odd){
+  float: left;
+}
+.recommendxg view-item:nth-of-type(even){
+  float: right;
+}
+.recommendxg view-item .img{
+  width: 330rpx;
+  height: 350rpx;
+}
+.recommendxg view-item image{
+  width: 330rpx;
+  height: 350rpx;
+}
+.recommendxg view-item .tit{
+  font-size: 22rpx;
+  color: #212121;
+  line-height: 34rpx;
+  margin-top: 15rpx;
+}
+.recommendxg view-item .pj{
+  width: 330rpx;
+  height: 36rpx;
+  border:2rpx solid #23242a;
+  display: flex;
+  font-size: 24rpx;
+  margin-top: 15rpx;
+}
+.recommendxg view-item .pj view{
+  width: 50%;
+  height: 36rpx;
+  text-align: center;
+  line-height: 36rpx;
+  font-size: 24rpx;
+  color:#23242a; 
+}
+.recommendxg view-item .pj button{
+  width: 50%;
+  outline: 0;
+  border: 0;
+  display: block;
+  height: 32rpx;
+  line-height: 32rpx;
+  text-align: center;
+  color: #fff;
+  border-radius: 0;
+  background: #23242a;
+  font-size: 24rpx;
+  }
+.detailbot navigator{
+  float:left;
+}
+.detailk{
+  height: 104rpx;
+}
+.detailbot{
+  width: 100%;
+  height: 105rpx;
+  position: fixed;
+  bottom: 0;
+  background-color: #fff;
+}
+.detailbot .shouye{
+  width: 90rpx;
+  border-right: 1px solid #e5e5e5;
+  text-align: center;
+  font-size: 18rpx;
+  color: #212121;
+  line-height: 22rpx;
+  overflow: hidden;
+  height: 104rpx;
+}
+.detailbot .shouye view{
+  width: 50rpx;
+  height: 50rpx;
+  margin: 15rpx auto 0;
+}
+.detailbot .kefu{
+  width: 90rpx;
+  border-right: 1px solid #e5e5e5;
+  text-align: center;
+  font-size: 18rpx;
+  color: #212121;
+  line-height: 22rpx;
+  overflow: hidden;
+  height: 104rpx;
+}
+.detailbot .kefu view{
+  width: 50rpx;
+  height: 50rpx;
+  margin: 15rpx auto 0;
+}
+.detailbot image{
+  width: 50rpx;
+  height: 50rpx;
+}
+.detailbot text{
+ margin: 0;
+ padding: 0;
+ 
+}
+.detailbot .gwc{
+  width: 90rpx;
+  text-align: center;
+  font-size: 18rpx;
+  color: #212121;
+  line-height: 22rpx;
+  overflow: hidden;
+  height: 104rpx;
+}
+.detailbot .gwc view{
+  width: 50rpx;
+  height: 50rpx;
+  margin: 15rpx auto 0;
+}
+.detailbot .jrgwc{
+  width: 240rpx;
+  height: 104rpx;
+  text-align: center;
+  font-size: 30rpx;
+  color: #fff;
+  font-weight: bold;
+  background-color: #23242a;
+  line-height: 104rpx;
+  border-radius: 0;
+  outline: 0;
+  padding: 0;
+  display: block;
+  float: left;
+  margin: 0;
+}
+.detailbot .ljgm{
+   width: 240rpx;
+  height: 104rpx;
+  text-align: center;
+  font-size: 30rpx;
+  color: #ffffff;
+  font-weight: bold;
+  background-color: #000000;
+  line-height: 104rpx;
+  border-radius: 0;
+  outline: 0;
+  padding: 0;
+  display: block;
+  float: left;
+  margin: 0;
+}
+/**优惠活动**/
+.couponsw{
+  background: #fff;
+}
+.couponsw .tit{
+  padding: 0 35rpx;
+  height:80rpx;
+  line-height: 80rpx;
+  font-size: 30rpx;
+  color: #3f3f3f;
+}
+.coupons .item{
+  display: block;
+  position: relative;
+  width: 665rpx;
+  height: 195rpx;
+  overflow: hidden;
+  margin:0 auto 20rpx;
+  border-radius: 5rpx;
+  background: #fff;
+  box-shadow: 2rpx 2rpx 20rpx rgba(233, 233, 233, 1);
+}
+.coupons .item .bgcoup{
+  width: 665rpx;
+  height: 142rpx;
+  display: block;
+}
+.coupons .item .bgcoup image{
+  width: 665rpx;
+  height: 142rpx;
+  display: block;
+}
+.coupons .item .coupw{
+  width: 665rpx;
+  height: 195rpx;
+  display: block;
+  position:absolute;
+  top: 0;
+  left: 0;
+}
+.coupons .item .coupw .coupt{
+  width: 665rpx;
+  height: 142rpx;
+  overflow: hidden;
+}
+.coupons .item .coupt .fvalue{
+  max-width: 300rpx;
+  line-height: 142rpx;
+  font-size: 100rpx;
+  color: #ffffff;
+  font-weight: 200;
+}
+.coupons .item .coupt .fvalue text{
+  float:left;
+margin-left:40rpx;
+margin-top:75rpx;
+font-size:45rpx;
+color:#ffffff;
+margin-right:15rpx;
+line-height:45rpx;
+
+}
+.coupons .item .coupt .zcoup{
+  width:150rpx;
+height:29px;
+margin-top:35rpx;
+margin-left:20rpx;
+
+}
+.coupons .item .coupt .zcoup .ti{
+  font-size: 30rpx;
+  color: #ffffff;
+  line-height: 35rpx;
+}
+.coupons .item .coupt .zcoup .man{
+  font-size: 20rpx;
+  color: #ffffff;
+  line-height: 60rpx;
+}
+.coupons .item .getcoup{
+  width: 160rpx;
+  height: 142rpx;
+  padding: 20rpx 35rpx;
+  font-size: 36rpx;
+  color: #ffffff;
+  line-height: 50rpx;
+  border-left: 2rpx dashed #f5b4bc;
+  text-align: center;
+}
+.coupons .item .time{
+  height: 50rpx;
+  background: #fff;
+  line-height: 50rpx;
+  font-size: 18rpx;
+  color: #5d5d5d;
+  text-indent: 40rpx;
+}

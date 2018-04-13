@@ -1,0 +1,26 @@
+/* pages/component/template/template.wxss */
+.icon{
+  width:54rpx;
+  height: 54rpx;
+}
+.tabBar{
+  width:100%;
+  position: fixed;
+  bottom:0;
+  padding:10rpx;
+  background:#0e0e10;
+  font-size:22rpx;
+  color:#b1b1b1;
+  border-top: 1rpx solid #1b1b1b;
+}
+
+ .tabBar-item{
+  float:left;
+  width:25%;
+  text-align: center;
+  overflow: hidden; padding-top:5px
+}
+/*当前字体颜色*/
+.tabBartext{
+  color:#ffff0c;
+}

@@ -1,0 +1,133 @@
+/* pages/component/fx/fxzx/fxzx.wxss */
+@import '../../../common/common.wxss';
+@import '../../../../template/template.wxss';
+page{
+  background: #f4f4f4;
+}
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.clearfix:after{
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.fxnav{
+  padding: 0rpx 20rpx;
+  background: #ffffff;
+}
+.fxnav .navtab{
+  width: 535rpx;
+  height: 90rpx;
+  display: flex;
+}
+.fxnav .navtab .li{
+  width: 33.3%;
+  height: 87rpx;
+  line-height: 87rpx;
+  border-bottom: 3rpx solid #fff;
+  color: #23242a;
+  font-size: 24rpx;
+  text-align: center;
+}
+.fxnav .navtab .cur{
+  border-bottom: 3rpx solid #23242a;
+}
+.fxnav .nav{
+  width: 175rpx;
+  text-align: center;
+}
+.fxnav .nav navigator{
+  width: 175rpx;
+  text-align: center;
+  color: #23242a;
+  font-size: 24rpx;
+  line-height: 87rpx;
+}
+.confx{
+  padding: 0 15rpx;
+  background: #efefef;
+}
+.confx .con-item{
+  display: none;
+}
+.confx .on{
+  display: block;
+}
+.confx .con-item .jzgd{
+  height: 100rpx;
+  text-align: center;
+  line-height: 100rpx;
+  font-size: 30rpx;
+  color: #545454;
+}
+.wntj{
+  width: 720rpx;
+}
+.wntj view-item{
+  display: block;
+  width: 330rpx;
+  height: 465rpx;
+  background: #fff;
+  padding: 10rpx;
+  margin-top: 20rpx;
+}
+.wntj view-item .img{
+  width: 330rpx;
+  height: 330rpx;
+}
+.wntj view-item .img image{
+  width: 330rpx;
+  height: 330rpx;
+  display: block;
+}
+.wntj view-item .tit{
+  font-size: 22rpx;
+  color: #545454;
+  line-height: 40rpx;
+  height: 80rpx;
+  overflow: hidden;
+}
+.wntj view-item .pj{
+  width: 330rpx;
+  height: 36rpx;
+  border:2rpx solid #23242a;
+  display: flex;
+  font-size: 24rpx;
+  margin-top: 5rpx;
+}
+.wntj view-item .pj view{
+  width: 50%;
+  height: 36rpx;
+  text-align: center;
+  line-height: 36rpx;
+  font-size: 24rpx;
+  color:#23242a; 
+}
+.wntj view-item .pj button{
+  width: 50%;
+  outline: 0;
+  border: 0;
+  display: block;
+  height: 32rpx;
+  line-height: 32rpx;
+  text-align: center;
+  color: #fff;
+  border-radius: 0;
+  background: #23242a;
+  font-size: 24rpx;
+  }
+ .wntj view-item:nth-of-type(odd){
+   float: left;
+ } 
+ .wntj view-item:nth-of-type(even){
+   float: right;
+ } 
+ .h140{
+   height: 140rpx;
+ }

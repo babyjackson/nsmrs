@@ -1,0 +1,90 @@
+<!--pages/component/sc/sc.wxml-->
+
+<!--头部导航-->
+<view class="sctoptab">
+  <scroll-view scroll-x style="white-space:nowrap;overflow:hidden;">
+    <view wx:for="{{navtop}}" wx:key="id" class="navw {{item.current}}">
+      <navigator url="{{item.navurl}}">
+        <image src="{{item.imgsrc}}"></image>
+        <text>{{item.text}}</text>
+      </navigator>
+    </view>
+  </scroll-view>
+</view>
+<view class="scbanner">
+  <view class="imgban">
+    <image src="/img/scsybanner.jpg"></image>
+  </view>
+</view>
+<view class="h120"></view>
+<!--热卖推荐-->
+<view class="hotRecomw">
+  <view class="alltit">
+    <view class="yw">RECOMMEND</view>
+    <view class="zw">热卖推荐</view>
+  </view>
+  <view class="hotRecom clearfix">
+    <view class="limg fl">
+      <image src="/img/allimg.jpg"></image>
+    </view>
+    <view class="rdl fr">
+      <view class="tit">【加绒可选】波士顿弹力</view>
+      <view class="tips">年货提前抢！！！</view>
+      <view class="h45"></view>
+      <view class="jdt">
+        <view class="djdt"><text>83%</text></view>
+        <view class="sjdt">即将售罄</view>
+      </view>
+      <view class="h30"></view>
+      <view class="pw clearfix">
+        <view class="price fl"><text class="xj">¥125</text><text class="yj">¥399</text></view>
+        <navigator class="msq fr">马上抢</navigator>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="h15"></view>
+<!--专属推荐-->
+<view class="zstjw">
+  <view class="alltit">
+    <view class="yw">RECOMMEND</view>
+    <view class="zw">专属推荐</view>
+  </view>
+  <view class="zstj clearfix">
+    <view-item class="fl" wx:for="{{zstj}}">
+      <navigator url="{{item.url}}">
+        <image src="{{item.imgsrc}}"></image>
+        <view class="h20"></view>
+        <view class="tit">{{item.tit}}</view>
+        <view class="h15"></view>
+        <view class="price">
+          <text class="xj">¥{{item.xj}}</text>
+          <text class="yj">¥{{item.yj}}</text>
+        </view>
+      </navigator>
+    </view-item>
+  </view>
+</view>
+<!--为你推荐-->
+<view class="wntjw">
+ <view class="alltit">
+    <view class="yw" style="color:#e1e0e0;">RECOMMEND</view>
+    <view class="zw">为你推荐</view>
+  </view>
+  <view class="wntj clearfix">
+    <view-item wx:for="{{wntj}}">
+      <navigator class="img">
+        <image src="{{item.imgsrc}}"></image>
+      </navigator>
+      <view class="tit">{{item.tit}}</view>
+      <view class="pj">
+        <view class="price">{{item.price}}</view>
+        <button class="jrgwc">加入购物车</button>
+      </view>
+    </view-item>
+  </view>
+</view>
+<!--底部-->
+<view class="h140"></view>
+<import src="../../../template/template.wxml"/>
+<template is="tabBar" data="{{tabBar:bindData.tabBar}}"/>
